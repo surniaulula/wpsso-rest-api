@@ -13,7 +13,7 @@ Requires At Least: 4.7
 Tested Up To: 4.9.6
 Stable Tag: 1.0.0
 
-WPSSO Core add-on to provide arrays of meta tag and Schema markup in the WordPress REST API post, term and user queries.
+WPSSO Core add-on to provide an array of meta tags and Schema markup in the WordPress REST API post, term and user queries.
 
 == Description ==
 
