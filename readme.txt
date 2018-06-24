@@ -23,7 +23,7 @@ WPSSO Core add-on to provide arrays of meta tag and Schema markup in the WordPre
 
 <p>The <code>html</code> array includes the HTML formatted meta tags and Schema JSON-LD (aka LD+JSON) scripts, as they appear in the webpage head section.</p>
 
-<p>The <code>parts</code> array provides the elements (aka "parts") of each HTML meta tag, making it easier and faster to extract the content of any meta tag.</p>
+<p>The <code>parts</code> array provides the elements (aka "the parts") of each HTML meta tag, making it easier and faster to extract the content of any meta tag.</p>
 
 <p>Simply <em>download</em>, <em>install</em> and <em>activate</em>.</p>
 
