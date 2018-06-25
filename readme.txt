@@ -19,13 +19,13 @@ WPSSO Core add-on to provide an array of meta tags and Schema markup in the Word
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-rest-api/assets/icon-256x256.png"></p>
 
-<p>The WPSSO REST API add-on includes a <code>head</code> element in the WordPress REST API query result, to provide an <code>html</code> and <code>parts</code> array.</p>
+The WPSSO REST API add-on includes a `head` element in the WordPress REST API query result, to provide an `html` and `parts` array.
 
-<p>The <code>html</code> array includes the HTML formatted meta tags and Schema JSON-LD (aka LD+JSON) scripts, as they appear in the webpage head section.</p>
+The `html` array includes the HTML formatted meta tags and Schema JSON-LD (aka LD+JSON) scripts, as they appear in the webpage head section.
 
-<p>The <code>parts</code> array offers the HTML meta tag attributes (aka "the parts") as individual arrays, making it easier and faster to extract the content of any meta tag.</p>
+The `parts` array offers the HTML meta tag attributes (aka "the parts") as individual arrays, making it easier and faster to extract the content of any meta tag.
 
-<p>There are no plugin settings &mdash; simply <em>download</em>, <em>install</em> and <em>activate</em>.</p>
+There are no plugin settings &mdash; simply *download*, *install* and *activate*.
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
