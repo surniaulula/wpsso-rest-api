@@ -27,7 +27,9 @@
 
 <p>WPSSO REST API (aka WPSSO REST) is an add-on for the WPSSO Core plugin.</p>
 
-<h3>An Example REST API Query Result</h3>
+<h3>REST API Query Result Example</h3>
+
+<p>The following REST API query result shows the "Tiled Gallery" post from the standard <a href="http://wptest.io/">WP Test</a> data.</p>
 
 <pre class="lang:default decode:true " >{
   "id": 1031,
