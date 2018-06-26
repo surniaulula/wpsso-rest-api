@@ -1,4 +1,4 @@
-=== WPSSO REST API ===
+=== WPSSO REST API to Provide Meta Tags and Schema Markup in Post, Term, and User Queries ===
 Plugin Name: WPSSO REST API
 Plugin Slug: wpsso-rest-api
 Text Domain: wpsso-rest-api
@@ -13,7 +13,7 @@ Requires At Least: 4.7
 Tested Up To: 4.9.6
 Stable Tag: 1.0.0
 
-WPSSO Core add-on to provide an array of meta tags and Schema markup in the WordPress REST API post, term and user queries.
+WPSSO Core add-on to provide an array of meta tags and Schema markup in the WordPress REST API post, term, and user queries.
 
 == Description ==
 
@@ -25,7 +25,7 @@ The `html` array includes the HTML formatted meta tags and Schema JSON-LD (aka L
 
 The `parts` array offers the HTML meta tag attributes (aka "the parts") as individual arrays, making it easier and faster to extract the content of any meta tag.
 
-There are no plugin settings &mdash; simply *download*, *install* and *activate*.
+There are no plugin settings &mdash; simply *download*, *install*, and *activate*.
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
