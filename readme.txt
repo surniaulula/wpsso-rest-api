@@ -1,4 +1,4 @@
-=== WPSSO REST API - Advanced Meta Tags and Schema Markup in Post, Term, and User Queries ===
+=== WPSSO REST API - Advanced Meta Tags and Schema Markup in Post, Term, and User REST API Queries ===
 Plugin Name: WPSSO REST API
 Plugin Slug: wpsso-rest-api
 Text Domain: wpsso-rest-api
