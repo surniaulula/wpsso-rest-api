@@ -75,9 +75,9 @@ The following REST API query result shows the "Tiled Gallery" post from the stan
   "tags": [],
   "head": {
     "html": [
-      "&lt;!-- generator:1 --&gt;&lt;meta name=\"generator\" content=\"WPSSO Core 4.5.3-dev.2/L\"/&gt;\n",
+      "&lt;!-- generator:1 --&gt;&lt;meta name=\"generator\" content=\"WPSSO Core 4.5.6/L\"/&gt;\n",
       "&lt;!-- generator:2 --&gt;&lt;meta name=\"generator\" content=\"WPSSO BC 1.1.4/F\"/&gt;\n",
-      "&lt;!-- generator:3 --&gt;&lt;meta name=\"generator\" content=\"WPSSO JSON 1.28.2-dev.2/L\"/&gt;\n",
+      "&lt;!-- generator:3 --&gt;&lt;meta name=\"generator\" content=\"WPSSO JSON 1.28.2/L\"/&gt;\n",
       "&lt;!-- generator:4 --&gt;&lt;meta name=\"generator\" content=\"WPSSO REST 1.0.0/F\"/&gt;\n",
       "&lt;!-- generator:5 --&gt;&lt;meta name=\"generator\" content=\"WPSSO UM 1.10.1/F\"/&gt;\n",
       "&lt;link rel=\"publisher\" href=\"https://plus.google.com/+SurniaUlula\"/&gt;\n",
@@ -115,7 +115,7 @@ The following REST API query result shows the "Tiled Gallery" post from the stan
         "name",
         "generator",
         "content",
-        "WPSSO Core 4.5.3-dev.2/L",
+        "WPSSO Core 4.5.6/L",
         "generator:1"
       ],
       [
@@ -131,7 +131,7 @@ The following REST API query result shows the "Tiled Gallery" post from the stan
         "name",
         "generator",
         "content",
-        "WPSSO JSON 1.28.2-dev.2/L",
+        "WPSSO JSON 1.28.2/L",
         "generator:3"
       ],
       [
