@@ -85,10 +85,18 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 				define( 'SUCOM_DOING_API', true );
 			}
 
-			$api_ret         = array( 'html' => array(), 'json' => array(), 'parts' => array() );
-			$head_array      = array();
+			/**
+			 * Reference variables for filter_get_term_object() and filter_get_user_object().
+			 */
 			$this->mod_name  = $mod_name;
 			$this->obj_array = $obj_array;
+
+			/**
+			 * Pre-define an array element order, and create a default array to return in case $mod_name is unknown.
+			 */
+			$api_ret  = array( 'html' => array(), 'json' => array(), 'parts' => array() );
+
+			$head_array = array();	// Pre-define - just in case.
 
 			switch ( $this->mod_name ) {
 			
@@ -134,11 +142,11 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			}
 
 			/**
-			 * Just in case - save any pre-existing 'html' and 'parts' array values.
+			 * Save any pre-existing array values.
 			 */
-			foreach ( array( 'html', 'parts', 'json' ) as $sub ) {
-				if ( isset( $this->obj_array['head'][$sub] ) && is_array( $this->obj_array['head'][$sub] ) ) {
-					$api_ret[$sub] = $this->obj_array['head'][$sub];
+			foreach ( $api_ret as $idx => $arr ) {
+				if ( isset( $this->obj_array['head'][$idx] ) && is_array( $this->obj_array['head'][$idx] ) ) {
+					$api_ret[$idx] = $this->obj_array['head'][$idx];
 				}
 			}
 
