@@ -85,7 +85,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 				define( 'SUCOM_DOING_API', true );
 			}
 
-			$api_ret         = array();
+			$api_ret         = array( 'html' => array(), 'json' => array(), 'parts' => array() );
 			$head_array      = array();
 			$this->mod_name  = $mod_name;
 			$this->obj_array = $obj_array;
