@@ -95,6 +95,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 				case 'post':
 
 					$mod = $this->p->m['util'][$this->mod_name]->get_mod( $this->obj_array['id'] );
+
 					$head_array = $this->p->head->get_head_array( $this->obj_array['id'], $mod );
 
 					break;
@@ -105,6 +106,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 					add_filter( 'sucom_get_term_object', array( $this, 'filter_get_term_object' ), 10 );
 
 					$mod = $this->p->m['util'][$this->mod_name]->get_mod( $this->obj_array['id'], $this->obj_array['taxonomy'] );
+
 					$head_array = $this->p->head->get_head_array( $this->obj_array['id'], $mod );
 
 					remove_filter( 'sucom_is_term_page', '__return_true', 10 );
@@ -118,6 +120,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 					add_filter( 'sucom_get_user_object', array( $this, 'filter_get_user_object' ), 10 );
 
 					$mod = $this->p->m['util'][$this->mod_name]->get_mod( $this->obj_array['id'] );
+
 					$head_array = $this->p->head->get_head_array( $this->obj_array['id'], $mod );
 
 					remove_filter( 'sucom_is_user_page', '__return_true', 10 );
@@ -133,7 +136,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			/**
 			 * Just in case - save any pre-existing 'html' and 'parts' array values.
 			 */
-			foreach ( array( 'html', 'parts' ) as $sub ) {
+			foreach ( array( 'html', 'parts', 'json' ) as $sub ) {
 				if ( isset( $this->obj_array['head'][$sub] ) && is_array( $this->obj_array['head'][$sub] ) ) {
 					$api_ret[$sub] = $this->obj_array['head'][$sub];
 				}
@@ -144,8 +147,33 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			 */
 			foreach ( $head_array as $meta ) {
 
+				/**
+				 * Save the first array element, which is the html formatted meta tag or script.
+				 */
 				if ( ! empty( $meta[0] ) ) {		// Just in case we don't have an html value.
+
 					$api_ret['html'][] = $meta[0];	// Save the html, including any json script blocks.
+
+					/**
+					 * If the html contains a script, decode and save the ld+json as an array.
+					 */
+					if ( strpos( $meta[0], '<script ' ) === 0 ) {
+
+						/**
+						 * Extract the script type and its value.
+						 */
+						if ( preg_match( '/^<script type="([^\'"]+)">(.*)<\/script>$/s', $meta[0], $matches ) ) {
+
+							switch ( $matches[1] ) {
+
+								case 'application/ld+json':
+
+									$api_ret['json'][] = json_decode( $matches[2] );
+
+									break;
+							}
+						}
+					}
 				}
 
 				array_shift( $meta );			// Remove the html element (first element in array).
