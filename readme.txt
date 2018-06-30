@@ -31,9 +31,9 @@ There are no plugin settings &mdash; simply *download*, *install*, and *activate
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO REST API (aka WPSSO REST) is an add-on for the WPSSO Core plugin (Free or Pro version).
+WPSSO REST API (aka WPSSO REST) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/) (Free or Pro version).
 
-The WPSSO Schema JSON-LD Markup add-on (Free or Pro version) is recommended to get complete meta tags and Schema JSON-LD markup for posts, pages, terms, users, etc.
+The [WPSSO Schema JSON-LD Markup add-on](https://wordpress.org/plugins/wpsso-schema-json-ld/) (Free or Pro version) is recommended to get the most complete meta tags and Schema JSON-LD markup for post, term, and user queries.
 
 <h3>REST API Query Result Example</h3>
 
