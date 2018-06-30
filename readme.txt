@@ -77,10 +77,10 @@ The following REST API query result shows the "Tiled Gallery" post from the stan
   "tags": &#91;&#93;,
   "head": {
     "html": &#91;
-      "&lt;!-- generator:1 --&gt;&lt;meta name=\"generator\" content=\"WPSSO Core 4.7.0-dev.1/L\"/&gt;\n",
+      "&lt;!-- generator:1 --&gt;&lt;meta name=\"generator\" content=\"WPSSO Core 4.7.0/L\"/&gt;\n",
       "&lt;!-- generator:2 --&gt;&lt;meta name=\"generator\" content=\"WPSSO BC 1.1.4/F\"/&gt;\n",
-      "&lt;!-- generator:3 --&gt;&lt;meta name=\"generator\" content=\"WPSSO JSON 1.29.0-dev.1/L\"/&gt;\n",
-      "&lt;!-- generator:4 --&gt;&lt;meta name=\"generator\" content=\"WPSSO REST 1.1.0-dev.1/F\"/&gt;\n",
+      "&lt;!-- generator:3 --&gt;&lt;meta name=\"generator\" content=\"WPSSO JSON 1.29.0/L\"/&gt;\n",
+      "&lt;!-- generator:4 --&gt;&lt;meta name=\"generator\" content=\"WPSSO REST 1.1.0/F\"/&gt;\n",
       "&lt;!-- generator:5 --&gt;&lt;meta name=\"generator\" content=\"WPSSO UM 1.10.2/F\"/&gt;\n",
       "&lt;link rel=\"publisher\" href=\"https://plus.google.com/+SurniaUlula\"/&gt;\n",
       "&lt;link rel=\"shortlink\" href=\"http://wptest.io/?p=1031\"/&gt;\n",
@@ -491,7 +491,7 @@ The following REST API query result shows the "Tiled Gallery" post from the stan
         "name",
         "generator",
         "content",
-        "WPSSO Core 4.7.0-dev.1/L",
+        "WPSSO Core 4.7.0/L",
         "generator:1"
       &#93;,
       &#91;
@@ -507,7 +507,7 @@ The following REST API query result shows the "Tiled Gallery" post from the stan
         "name",
         "generator",
         "content",
-        "WPSSO JSON 1.29.0-dev.1/L",
+        "WPSSO JSON 1.29.0/L",
         "generator:3"
       &#93;,
       &#91;
@@ -515,7 +515,7 @@ The following REST API query result shows the "Tiled Gallery" post from the stan
         "name",
         "generator",
         "content",
-        "WPSSO REST 1.1.0-dev.1/F",
+        "WPSSO REST 1.1.0/F",
         "generator:4"
       &#93;,
       &#91;
@@ -939,7 +939,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.1.0-dev.1 (2018/06/30)**
+**Version 1.1.0 (2018/06/30)**
 
 * *New Features*
 	* Added a 'json' array element with the decoded ld+json scripts.
@@ -950,24 +950,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* None
 
-**Version 1.0.0 (2018/06/24)**
-
-* *New Features*
-	* Initial release.
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
-
 == Upgrade Notice ==
 
-= 1.1.0-dev.1 =
+= 1.1.0 =
 
 (2018/06/30) Added a 'json' array element with the decoded ld+json scripts.
-
-= 1.0.0 =
-
-(2018/06/24) Initial release.
 
