@@ -941,7 +941,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.1.0 (2018/06/30)**
+**Version 1.1.0 (2018/07/01)**
 
 * *New Features*
 	* Added a 'json' array element with the decoded ld+json scripts.
@@ -956,5 +956,5 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 1.1.0 =
 
-(2018/06/30) Added a 'json' array element with the decoded ld+json scripts.
+(2018/07/01) Added a 'json' array element with the decoded ld+json scripts.
 
