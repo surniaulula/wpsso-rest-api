@@ -23,9 +23,9 @@ The WPSSO REST API add-on includes a `head` element in the WordPress REST API qu
 
 * The `html` array includes the HTML formatted meta tags and Schema JSON-LD (aka LD+JSON) scripts, as they appear in the webpage head section.
 
-* The `json` array provided any Schema JSON-LD (aka LD+JSON) scripts in their decoded format.
+* The `json` array provides Schema JSON-LD (aka LD+JSON) scripts in their decoded format.
 
-* The `parts` array offers HTML meta tag attributes (aka "the parts") as individual arrays, making it easier and faster to use specific meta tags.
+* The `parts` array offers HTML meta tag attributes (aka "the parts") as arrays, making it easier to find / use specific meta tag values.
 
 There are no plugin settings &mdash; simply *download*, *install*, and *activate*.
 
