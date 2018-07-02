@@ -911,16 +911,6 @@ The following REST API query result shows the "Tiled Gallery" post from the stan
 
 == Frequently Asked Questions ==
 
-<h3 class="top">Frequently Asked Questions</h3>
-
-* None
-
-== Other Notes ==
-
-<h3 class="top">Additional Documentation</h3>
-
-* None
-
 == Screenshots ==
 
 == Changelog ==
