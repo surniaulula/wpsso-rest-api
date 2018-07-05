@@ -10,7 +10,7 @@ Tags: rest, api, rest api, meta tags, schema, markup
 Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 4.7
-Tested Up To: 4.9.6
+Tested Up To: 4.9.7
 Stable Tag: 1.1.0
 
 WPSSO Core add-on to provide an array of meta tags and Schema markup in the WordPress REST API post, term, and user queries.
