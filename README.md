@@ -15,7 +15,7 @@
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-rest-api/assets/icon-256x256.png"></p>
 
-<p>The WPSSO REST API add-on includes a <code>head</code> element in the WordPress REST API query result, to provide an <code>html</code>, <code>json</code>, and <code>parts</code> array.</p>
+<p>The WPSSO REST API add-on includes a <code>head</code> element in the WordPress REST API query result to provide an <code>html</code>, <code>json</code>, and <code>parts</code> array.</p>
 
 <ul>
 <li><p>The <code>html</code> array includes the HTML formatted meta tags and Schema JSON-LD (aka LD+JSON) scripts, as they appear in the webpage head section.</p></li>
