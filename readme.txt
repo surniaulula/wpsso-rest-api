@@ -27,7 +27,7 @@ The WPSSO REST API add-on includes a `head` element in the WordPress REST API qu
 
 * The `parts` array offers HTML meta tag attributes (aka "the parts") as arrays, making it easier to find / use specific meta tag values.
 
-There are no plugin settings &mdash; simply *download*, *install*, and *activate*.
+There is no add-on settings page for this plugin &mdash; simply *install* and *activate* the plugin.
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 

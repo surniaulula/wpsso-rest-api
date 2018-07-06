@@ -23,7 +23,7 @@
 <li><p>The <code>parts</code> array offers HTML meta tag attributes (aka "the parts") as arrays, making it easier to find / use specific meta tag values.</p></li>
 </ul>
 
-<p>There are no plugin settings &mdash; simply <em>download</em>, <em>install</em>, and <em>activate</em>.</p>
+<p>There is no add-on settings page for this plugin &mdash; simply <em>install</em> and <em>activate</em> the plugin.</p>
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
