@@ -936,11 +936,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* Added a 'json' array element with the decoded ld+json scripts.
 * *Improvements*
-	* None
+	* None.
 * *Bugfixes*
-	* None
+	* None.
 * *Developer Notes*
-	* None
+	* None.
 
 == Upgrade Notice ==
 
