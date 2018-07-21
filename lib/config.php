@@ -16,24 +16,24 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssorest' => array(			// Plugin acronym.
-					'version' => '1.1.0',		// Plugin version.
+					'version'     => '1.2.0-rc.1',	// Plugin version.
 					'opt_version' => '1',		// Increment when changing default option values.
-					'short' => 'WPSSO REST',	// Short plugin name.
-					'name' => 'WPSSO REST API',
-					'desc' => 'WPSSO Core add-on to provide an array of meta tags and Schema markup in the WordPress REST API post, term and user queries.',
-					'slug' => 'wpsso-rest-api',
-					'base' => 'wpsso-rest-api/wpsso-rest-api.php',
+					'short'       => 'WPSSO REST',	// Short plugin name.
+					'name'        => 'WPSSO REST API',
+					'desc'        => 'WPSSO Core add-on to provide an array of meta tags and Schema markup in the WordPress REST API post, term and user queries.',
+					'slug'        => 'wpsso-rest-api',
+					'base'        => 'wpsso-rest-api/wpsso-rest-api.php',
 					'update_auth' => '',
 					'text_domain' => 'wpsso-rest-api',
 					'domain_path' => '/languages',
 					'req' => array(
-						'short' => 'WPSSO Core',
-						'name' => 'WPSSO Core',
-						'min_version' => '4.7.0',
+						'short'       => 'WPSSO Core',
+						'name'        => 'WPSSO Core',
+						'min_version' => '4.9.0-rc.1',
 					),
 					'img' => array(
 						'icons' => array(
-							'low' => 'images/icon-128x128.png',
+							'low'  => 'images/icon-128x128.png',
 							'high' => 'images/icon-256x256.png',
 						),
 					),
