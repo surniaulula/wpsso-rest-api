@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 4.7
 Tested Up To: 4.9.7
-Stable Tag: 1.1.0
+Stable Tag: 1.2.0
 
 WPSSO Core add-on to provide an array of meta tags and Schema markup in the WordPress REST API post, term, and user queries.
 
@@ -958,8 +958,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.2.0 =
 
 (2018/07/22) Maintenance release.
-
-= 1.1.0 =
-
-(2018/07/01) Added a 'json' array element with the decoded ld+json scripts.
 
