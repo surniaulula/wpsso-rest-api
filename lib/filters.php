@@ -27,6 +27,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 		private $obj_array;
 
 		public function __construct( &$plugin ) {
+
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
