@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 					'req' => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '4.14.1',
+						'min_version' => '4.15.0',
 					),
 					'img' => array(
 						'icons' => array(
@@ -48,9 +48,11 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 		);
 
 		public static function get_version( $add_slug = false ) {
-			$ext = 'wpssorest';
+
+			$ext  = 'wpssorest';
 			$info =& self::$cf['plugin'][$ext];
-			return $add_slug ? $info['slug'].'-'.$info['version'] : $info['version'];
+
+			return $add_slug ? $info['slug'] . '-' . $info['version'] : $info['version'];
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
@@ -69,24 +71,30 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 
 		public static function require_libs( $plugin_filepath ) {
 
-			require_once WPSSOREST_PLUGINDIR.'lib/register.php';
-			require_once WPSSOREST_PLUGINDIR.'lib/filters.php';
+			require_once WPSSOREST_PLUGINDIR . 'lib/register.php';
+			require_once WPSSOREST_PLUGINDIR . 'lib/filters.php';
 
 			add_filter( 'wpssorest_load_lib', array( 'WpssoRestConfig', 'load_lib' ), 10, 3 );
 		}
 
 		public static function load_lib( $ret = false, $filespec = '', $classname = '' ) {
+
 			if ( false === $ret && ! empty( $filespec ) ) {
-				$filepath = WPSSOREST_PLUGINDIR.'lib/'.$filespec.'.php';
+
+				$filepath = WPSSOREST_PLUGINDIR . 'lib/' . $filespec . '.php';
+
 				if ( file_exists( $filepath ) ) {
+
 					require_once $filepath;
+
 					if ( empty( $classname ) ) {
-						return SucomUtil::sanitize_classname( 'wpssorest'.$filespec, false );	// $underscore = false
+						return SucomUtil::sanitize_classname( 'wpssorest' . $filespec, $allow_underscore = false );
 					} else {
 						return $classname;
 					}
 				}
 			}
+
 			return $ret;
 		}
 	}
