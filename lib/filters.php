@@ -177,7 +177,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 
 								case 'application/ld+json':
 
-									$api_ret['json'][] = json_decode( $matches[2] );
+									$api_ret['json'][] = json_decode( $matches[2], $assoc = true );
 
 									break;
 							}
