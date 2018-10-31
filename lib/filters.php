@@ -69,14 +69,17 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 		}
 
 		public function get_post( $obj_array, $field_name = 'head', WP_REST_Request $request ) {
+
 			return $this->get_head( 'post', $obj_array, $field_name, $request );
 		}
 
 		public function get_term( $obj_array, $field_name = 'head', WP_REST_Request $request ) {
+
 			return $this->get_head( 'term', $obj_array, $field_name, $request );
 		}
 
 		public function get_user( $obj_array, $field_name = 'head', WP_REST_Request $request ) {
+
 			return $this->get_head( 'user', $obj_array, $field_name, $request );
 		}
 
@@ -95,7 +98,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			/**
 			 * Pre-define an array element order, and create a default array to return in case $mod_name is unknown.
 			 */
-			$api_ret  = array( 'html' => array(), 'json' => array(), 'parts' => array() );
+			$result = array( 'html' => array(), 'json' => array(), 'parts' => array() );
 
 			$head_array = array();	// Pre-define - just in case.
 
@@ -139,15 +142,17 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 
 				default:
 
-					return $api_ret;	// Object type is unknown - stop here.
+					return $result;	// Object type is unknown - stop here.
 			}
 
 			/**
 			 * Save any pre-existing array values.
 			 */
-			foreach ( $api_ret as $idx => $arr ) {
-				if ( isset( $this->obj_array['head'][$idx] ) && is_array( $this->obj_array['head'][$idx] ) ) {
-					$api_ret[$idx] = $this->obj_array['head'][$idx];
+			foreach ( $result as $type => $values ) {
+
+				if ( isset( $this->obj_array['head'][$type] ) && is_array( $this->obj_array['head'][$type] ) ) {
+
+					$result[$type] = $this->obj_array['head'][$type];
 				}
 			}
 
@@ -161,7 +166,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 				 */
 				if ( ! empty( $meta[0] ) ) {		// Just in case we don't have an html value.
 
-					$api_ret['html'][] = $meta[0];	// Save the html, including any json script blocks.
+					$result['html'][] = $meta[0];	// Save the html, including any json script blocks.
 
 					/**
 					 * If the html contains a script, decode and save the ld+json as an array.
@@ -177,7 +182,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 
 								case 'application/ld+json':
 
-									$api_ret['json'][] = json_decode( $matches[2], $assoc = true );
+									$result['json'][] = json_decode( $matches[2], $assoc = true );
 
 									break;
 							}
@@ -188,11 +193,11 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 				array_shift( $meta );			// Remove the html element (first element in array).
 
 				if ( ! empty( $meta ) ) {		// Just in case we only had an html value.
-					$api_ret['parts'][] = $meta;	// Save the meta tag array, without the html element.
+					$result['parts'][] = $meta;	// Save the meta tag array, without the html element.
 				}
 			}
 
-			return $api_ret;
+			return $result;
 		}
 
 		public function filter_get_term_object( $term_obj ) {
