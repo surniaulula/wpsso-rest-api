@@ -942,17 +942,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* None.
 
-**Version 1.1.0 (2018/07/01)**
-
-* *New Features*
-	* Added a 'json' array element with the decoded ld+json scripts.
-* *Improvements*
-	* None.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* None.
-
 == Upgrade Notice ==
 
 = 1.2.0 =
