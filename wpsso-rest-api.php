@@ -35,11 +35,15 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 	class WpssoRest {
 
 		/**
-		 * Class Object Variables
+		 * Wpsso plugin class object variable.
 		 */
-		public $p;			// Wpsso
-		public $reg;			// WpssoRestRegister
-		public $filters;		// WpssoRestFilters
+		public $p;		// Wpsso
+
+		/**
+		 * Library class object variables.
+		 */
+		public $filters;	// WpssoRestFilters
+		public $reg;		// WpssoRestRegister
 
 		/**
 		 * Reference Variables (config, options, modules, etc.).
