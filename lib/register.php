@@ -97,7 +97,7 @@ if ( ! class_exists( 'WpssoRestRegister' ) ) {
 
 		private function activate_plugin() {
 
-			$version = WpssoRestConfig::$cf[ 'plugin' ]['wpssorest'][ 'version' ];	// only our config
+			$version = WpssoRestConfig::$cf[ 'plugin' ][ 'wpssorest' ][ 'version' ];	// only our config
 
 			if ( class_exists( 'WpssoUtil' ) ) {
 				WpssoUtil::save_all_times( 'wpssorest', $version );
