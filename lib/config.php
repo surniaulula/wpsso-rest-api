@@ -50,9 +50,9 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 		public static function get_version( $add_slug = false ) {
 
 			$ext  = 'wpssorest';
-			$info =& self::$cf['plugin'][$ext];
+			$info =& self::$cf[ 'plugin' ][$ext];
 
-			return $add_slug ? $info['slug'] . '-' . $info['version'] : $info['version'];
+			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
@@ -62,11 +62,11 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 			}
 
 			define( 'WPSSOREST_FILEPATH', $plugin_filepath );						
-			define( 'WPSSOREST_PLUGINBASE', self::$cf['plugin']['wpssorest']['base'] );		// wpsso-rest-api/wpsso-rest-api.php
+			define( 'WPSSOREST_PLUGINBASE', self::$cf[ 'plugin' ]['wpssorest'][ 'base' ] );		// wpsso-rest-api/wpsso-rest-api.php
 			define( 'WPSSOREST_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
-			define( 'WPSSOREST_PLUGINSLUG', self::$cf['plugin']['wpssorest']['slug'] );		// wpsso-rest-api
+			define( 'WPSSOREST_PLUGINSLUG', self::$cf[ 'plugin' ]['wpssorest'][ 'slug' ] );		// wpsso-rest-api
 			define( 'WPSSOREST_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
-			define( 'WPSSOREST_VERSION', self::$cf['plugin']['wpssorest']['version'] );						
+			define( 'WPSSOREST_VERSION', self::$cf[ 'plugin' ]['wpssorest'][ 'version' ] );						
 		}
 
 		public static function require_libs( $plugin_filepath ) {
