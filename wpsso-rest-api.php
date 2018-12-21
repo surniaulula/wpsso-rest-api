@@ -10,7 +10,7 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: WPSSO Core add-on to provide an array of meta tags and Schema markup in the WordPress REST API post, term and user queries.
+ * Description: WPSSO Core add-on offers an array of meta tags and Schema markup in the WordPress REST API post, term, and user queries.
  * Requires PHP: 5.4
  * Requires At Least: 4.7
  * Tested Up To: 5.0
