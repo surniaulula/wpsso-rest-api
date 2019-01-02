@@ -47,24 +47,24 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 
 			foreach ( $this->p->util->get_post_types( 'names' ) as $ptn ) {
 				register_rest_field( $ptn, 'head', array(
-					'get_callback' => array( $this, 'get_post' ),
+					'get_callback'    => array( $this, 'get_post' ),
 					'update_callback' => null,
-					'schema' => null,
+					'schema'          => null,
 				) );
 			}
 
 			foreach ( $this->p->util->get_taxonomies( 'names' ) as $ttn ) {
 				register_rest_field( $ttn, 'head', array(
-					'get_callback' => array( $this, 'get_term' ),
+					'get_callback'    => array( $this, 'get_term' ),
 					'update_callback' => null,
-					'schema' => null,
+					'schema'          => null,
 				) );
 			}
 
 			register_rest_field( 'user', 'head', array(
-				'get_callback' => array( $this, 'get_user' ),
+				'get_callback'    => array( $this, 'get_user' ),
 				'update_callback' => null,
-				'schema' => null,
+				'schema'          => null,
 			) );
 		}
 
@@ -98,7 +98,11 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			/**
 			 * Pre-define an array element order, and create a default array to return in case $mod_name is unknown.
 			 */
-			$result = array( 'html' => array(), 'json' => array(), 'parts' => array() );
+			$result = array(
+				'html'  => array(),
+				'json'  => array(),
+				'parts' => array(),
+			);
 
 			$head_array = array();	// Pre-define - just in case.
 
