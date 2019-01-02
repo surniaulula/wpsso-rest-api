@@ -110,7 +110,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			
 				case 'post':
 
-					$mod = $this->p->m[ 'util' ][$this->mod_name]->get_mod( $this->obj_array[ 'id' ] );
+					$mod = $this->p->m[ 'util' ][ $this->mod_name ]->get_mod( $this->obj_array[ 'id' ] );
 
 					$head_array = $this->p->head->get_head_array( $this->obj_array[ 'id' ], $mod );
 
@@ -121,7 +121,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 					add_filter( 'sucom_is_term_page', '__return_true', 10 );
 					add_filter( 'sucom_get_term_object', array( $this, 'filter_get_term_object' ), 10 );
 
-					$mod = $this->p->m[ 'util' ][$this->mod_name]->get_mod( $this->obj_array[ 'id' ], $this->obj_array['taxonomy'] );
+					$mod = $this->p->m[ 'util' ][ $this->mod_name ]->get_mod( $this->obj_array[ 'id' ], $this->obj_array[ 'taxonomy' ] );
 
 					$head_array = $this->p->head->get_head_array( $this->obj_array[ 'id' ], $mod );
 
@@ -135,7 +135,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 					add_filter( 'sucom_is_user_page', '__return_true', 10 );
 					add_filter( 'sucom_get_user_object', array( $this, 'filter_get_user_object' ), 10 );
 
-					$mod = $this->p->m[ 'util' ][$this->mod_name]->get_mod( $this->obj_array[ 'id' ] );
+					$mod = $this->p->m[ 'util' ][ $this->mod_name ]->get_mod( $this->obj_array[ 'id' ] );
 
 					$head_array = $this->p->head->get_head_array( $this->obj_array[ 'id' ], $mod );
 
@@ -154,9 +154,9 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			 */
 			foreach ( $result as $type => $values ) {
 
-				if ( isset( $this->obj_array['head'][$type] ) && is_array( $this->obj_array['head'][$type] ) ) {
+				if ( isset( $this->obj_array[ 'head' ][ $type ] ) && is_array( $this->obj_array[ 'head' ][ $type ] ) ) {
 
-					$result[$type] = $this->obj_array['head'][$type];
+					$result[ $type ] = $this->obj_array[ 'head' ][ $type ];
 				}
 			}
 
@@ -170,7 +170,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 				 */
 				if ( ! empty( $meta[0] ) ) {		// Just in case we don't have an html value.
 
-					$result['html'][] = $meta[0];	// Save the html, including any json script blocks.
+					$result[ 'html' ][] = $meta[0];	// Save the html, including any json script blocks.
 
 					/**
 					 * If the html contains a script, decode and save the ld+json as an array.
@@ -186,7 +186,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 
 								case 'application/ld+json':
 
-									$result['json'][] = json_decode( $matches[2], $assoc = true );
+									$result[ 'json' ][] = json_decode( $matches[2], $assoc = true );
 
 									break;
 							}
@@ -197,7 +197,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 				array_shift( $meta );			// Remove the html element (first element in array).
 
 				if ( ! empty( $meta ) ) {		// Just in case we only had an html value.
-					$result['parts'][] = $meta;	// Save the meta tag array, without the html element.
+					$result[ 'parts' ][] = $meta;	// Save the meta tag array, without the html element.
 				}
 			}
 
@@ -205,7 +205,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 		}
 
 		public function filter_get_term_object( $term_obj ) {
-			return get_term_by( 'term_taxonomy_id', $this->obj_array[ 'id' ], $this->obj_array['taxonomy'], OBJECT, 'raw' );
+			return get_term_by( 'term_taxonomy_id', $this->obj_array[ 'id' ], $this->obj_array[ 'taxonomy' ], OBJECT, 'raw' );
 		}
 
 		public function filter_get_user_object( $user_obj ) {
