@@ -1,8 +1,8 @@
-<h1>WPSSO REST API</h1><h3>Advanced Meta Tags and Schema Markup for Post, Term and User REST API Queries</h3>
+<h1>WPSSO REST API</h1><h3>Advanced Meta Tags and Schema Markup for Post, Term, and User REST API Queries</h3>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO REST API</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core add-on offers an array of meta tags and Schema markup in the WordPress REST API post, term and user queries.</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core add-on offers an array of meta tags and Schema markup in the WordPress REST API post, term, and user queries.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.2.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 4.7</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 5.0</td></tr>
@@ -29,7 +29,7 @@
 
 <p>WPSSO REST API (aka WPSSO REST) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a> (Free or Pro version).</p>
 
-<p>The <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD Markup add-on</a> (Free or Pro version) is recommended to get the most complete meta tags and Schema JSON-LD markup for post, term and user queries.</p>
+<p>The <a href="https://wordpress.org/plugins/wpsso-schema-json-ld/">WPSSO Schema JSON-LD Markup add-on</a> (Free or Pro version) is recommended to get the most complete meta tags and Schema JSON-LD markup for post, term, and user queries.</p>
 
 <h3>REST API Query Result Example</h3>
 
