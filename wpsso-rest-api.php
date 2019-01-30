@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WPSSO REST API
+ * Plugin Name: WPSSO REST API [Add-on]
  * Plugin Slug: wpsso-rest-api
  * Text Domain: wpsso-rest-api
  * Domain Path: /languages
