@@ -1,8 +1,8 @@
-# Copyright (C) 2019 WPSSO REST API [Add-on]
-# This file is distributed under the same license as the WPSSO REST API [Add-on] package.
+# Copyright (C) 2019 WPSSO REST API
+# This file is distributed under the same license as the WPSSO REST API package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO REST API [Add-on] 1.2.0\n"
+"Project-Id-Version: WPSSO REST API 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-rest-api\n"
 "POT-Creation-Date: 2019-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -46,7 +46,7 @@ msgid ""
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "WPSSO REST API [Add-on]"
+msgid "WPSSO REST API"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
