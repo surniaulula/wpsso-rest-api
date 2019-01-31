@@ -931,20 +931,20 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.2.0 (2018/07/22)**
+**Version 1.2.1 (2019/01/31)**
 
 * *New Features*
 	* None.
 * *Improvements*
-	* Maintenance release.
+	* Maintenance release for WPSSO Core v4.22.0.
 * *Bugfixes*
 	* None.
 * *Developer Notes*
-	* None.
+	* Updated the required minimum PHP version from 5.4 to 5.5.
 
 == Upgrade Notice ==
 
-= 1.2.0 =
+= 1.2.1 =
 
-(2018/07/22) Maintenance release.
+(2019/01/31) Maintenance release for WPSSO Core v4.22.0.
 
