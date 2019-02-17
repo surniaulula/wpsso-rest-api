@@ -11,7 +11,7 @@
  * IF YOU DO NOT AGREE TO THE TERMS OF ITS LICENSE AGREEMENT, PLEASE DO NOT
  * INSTALL, RUN, COPY, OR OTHERWISE USE THE WPSSO CORE PRO APPLICATION.
  * 
- * Copyright 2012-2018 Jean-Sebastien Morisset (https://wpsso.com/)
+ * Copyright 2012-2019 Jean-Sebastien Morisset (https://wpsso.com/)
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
