@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-rest-api/assets/
 Tags: rest, api, rest api, meta tags, schema, markup
 Contributors: jsmoriss
 Requires At Least: 4.7
-Tested Up To: 5.1.1
+Tested Up To: 5.2
 Stable Tag: 1.2.2
 
 WPSSO Core add-on offers an array of meta tags and Schema markup in the WordPress REST API post, term, and user queries.
