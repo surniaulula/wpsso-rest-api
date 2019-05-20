@@ -930,7 +930,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.3.0-rc.1 (2019/05/19)**
+**Version 1.3.0 (2019/05/20)**
 
 * *New Features*
 	* None.
@@ -941,24 +941,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* Update for code changes in WPSSO Core v4.31.0.
 
-**Version 1.2.2 (2019/04/09)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* None.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* Maintenance release for WPSSO Core v4.27.2 config array updates.
-
 == Upgrade Notice ==
 
-= 1.3.0-rc.1 =
+= 1.3.0 =
 
-(2019/05/19) Update for code changes in WPSSO Core v4.31.0.
-
-= 1.2.2 =
-
-(2019/04/09) Maintenance release for WPSSO Core v4.27.2 config array updates.
+(2019/05/20) Update for code changes in WPSSO Core v4.31.0.
 
