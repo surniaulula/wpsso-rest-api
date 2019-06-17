@@ -30,9 +30,9 @@ There is no add-on settings page for this plugin &mdash; simply *install* and *a
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO REST API (aka WPSSO REST) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/) (Free or Pro version).
+WPSSO REST API (aka WPSSO REST) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
 
-The [WPSSO Schema JSON-LD Markup add-on](https://wordpress.org/plugins/wpsso-schema-json-ld/) (Free or Pro version) is recommended to get the most complete meta tags and Schema JSON-LD markup for post, term, and user queries.
+The [WPSSO Schema JSON-LD Markup add-on](https://wordpress.org/plugins/wpsso-schema-json-ld/) is recommended to get the most complete meta tags and Schema JSON-LD markup for post, term, and user queries.
 
 <h3>REST API Query Result Example</h3>
 
@@ -930,6 +930,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.0.0-dev.1 (2019/06/17)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* Maintenance release for WPSSO Core v5.0.0.
+
 **Version 1.3.0 (2019/05/20)**
 
 * *New Features*
@@ -942,6 +953,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Update for code changes in WPSSO Core v4.31.0.
 
 == Upgrade Notice ==
+
+= 2.0.0-dev.1 =
+
+(2019/06/17) Maintenance release for WPSSO Core v5.0.0.
 
 = 1.3.0 =
 
