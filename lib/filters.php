@@ -1,17 +1,8 @@
 <?php
 /**
- * IMPORTANT: READ THE LICENSE AGREEMENT CAREFULLY.
- *
- * BY INSTALLING, COPYING, RUNNING, OR OTHERWISE USING THE WPSSO CORE PREMIUM
- * APPLICATION, YOU AGREE TO BE BOUND BY THE TERMS OF ITS LICENSE AGREEMENT.
- * 
- * License: Nontransferable License for a WordPress Site Address URL
- * License URI: https://wpsso.com/wp-content/plugins/wpsso/license/pro.txt
- *
- * IF YOU DO NOT AGREE TO THE TERMS OF ITS LICENSE AGREEMENT, PLEASE DO NOT
- * INSTALL, RUN, COPY, OR OTHERWISE USE THE WPSSO CORE PREMIUM APPLICATION.
- * 
- * Copyright 2012-2019 Jean-Sebastien Morisset (https://wpsso.com/)
+ * License: GPLv3
+ * License URI: https://www.gnu.org/licenses/gpl.txt
+ * Copyright 2016-2019 Jean-Sebastien Morisset (https://wpsso.com/)
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
