@@ -151,15 +151,16 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 
 					wp_die( 
 						'<p>' . sprintf( __( '%1$s requires %2$s version %3$s or higher and has been deactivated.',
-							'wpsso-rest-api' ), $plugin_data['Name'], 'WordPress', self::$wp_min_version ) . '</p>' . 
+							'wpsso-rest-api' ), $plugin_data[ 'Name' ], 'WordPress', self::$wp_min_version ) . '</p>' . 
 						'<p>' . sprintf( __( 'Please upgrade %1$s before trying to re-activate the %2$s plugin.',
-							'wpsso-rest-api' ), 'WordPress', $plugin_data['Name'] ) . '</p>'
+							'wpsso-rest-api' ), 'WordPress', $plugin_data[ 'Name' ] ) . '</p>'
 					);
 				}
 			}
 		}
 
 		public static function wpsso_init_textdomain() {
+
 			load_plugin_textdomain( 'wpsso-rest-api', false, 'wpsso-rest-api/languages/' );
 		}
 
@@ -171,7 +172,9 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 			$info = WpssoRestConfig::$cf[ 'plugin' ][ 'wpssorest' ];
 
 			if ( version_compare( $plugin_version, $info[ 'req' ][ 'min_version' ], '<' ) ) {
+
 				$this->have_req_min = false;
+
 				return $cf;
 			}
 
@@ -181,11 +184,13 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 		public function wpsso_get_avail( $avail ) {
 
 			if ( ! $this->have_req_min ) {
-				$avail['p_ext']['rest'] = false;	// Signal that this extension / add-on is not available.
+
+				$avail[ 'p_ext' ][ 'rest' ] = false;	// Signal that this extension / add-on is not available.
+
 				return $avail;
 			}
 
-			$avail['p_ext']['rest'] = true;			// Signal that this extension / add-on is available.
+			$avail[ 'p_ext' ][ 'rest' ] = true;		// Signal that this extension / add-on is available.
 
 			return $avail;
 		}
