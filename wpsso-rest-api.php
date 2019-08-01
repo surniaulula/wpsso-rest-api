@@ -220,7 +220,7 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 			}
 
 			if ( ! $this->have_req_min ) {
-				return;	// stop here
+				return;	// Stop here.
 			}
 
 			$this->filters = new WpssoRestFilters( $this->p );
@@ -236,7 +236,7 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 
 				$this->min_version_notice();
 
-				return;	// stop here
+				return;	// Stop here.
 			}
 		}
 
