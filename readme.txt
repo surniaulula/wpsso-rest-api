@@ -1,4 +1,4 @@
-=== WPSSO REST API ===
+=== REST API | WPSSO Add-on ===
 Plugin Name: WPSSO REST API
 Plugin Slug: wpsso-rest-api
 Text Domain: wpsso-rest-api
@@ -12,7 +12,7 @@ Requires At Least: 4.7
 Tested Up To: 5.2.2
 Stable Tag: 2.0.0
 
-WPSSO Core add-on offers an array of meta tags and Schema markup in the WordPress REST API post, term, and user queries.
+Enhances the WordPress REST API post, term, and user queries with an array of meta tags and Schema markup.
 
 == Description ==
 
