@@ -15,8 +15,8 @@ msgstr ""
 #: lib/gettext-config.php:6
 msgctxt "plugin description"
 msgid ""
-"WPSSO Core add-on offers an array of meta tags and Schema markup in the "
-"WordPress REST API post, term, and user queries."
+"Enhances the WordPress REST API post, term, and user queries with an array "
+"of meta tags and Schema markup."
 msgstr ""
 
 #: wpsso-rest-api.php:108
