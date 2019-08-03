@@ -55,8 +55,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO Core add-on offers an array of meta tags and Schema markup in the "
-"WordPress REST API post, term, and user queries."
+"Enhances the WordPress REST API post, term, and user queries with an array "
+"of meta tags and Schema markup."
 msgstr ""
 
 #. Author of the plugin/theme
