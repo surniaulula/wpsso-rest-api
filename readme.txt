@@ -10,7 +10,7 @@ Tags: rest, api, rest api, meta tags, schema, markup
 Contributors: jsmoriss
 Requires At Least: 4.7
 Tested Up To: 5.2.2
-Stable Tag: 2.0.0
+Stable Tag: 2.0.1
 
 Enhances the WordPress REST API post, term, and user queries with an array of meta tags and Schema markup.
 
