@@ -930,7 +930,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.0.2-dev.4 (2019/08/08)**
+**Version 2.0.2-b.1 (2019/08/09)**
 
 * **New Features**
 	* None.
@@ -954,9 +954,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.0.2-dev.4 =
+= 2.0.2-b.1 =
 
-(2019/08/08) Fixed WpssoHead::get_head_array() `$use_post` argument value from post/term/user ID to `false`.
+(2019/08/09) Fixed WpssoHead::get_head_array() `$use_post` argument value from post/term/user ID to `false`.
 
 = 2.0.1 =
 
