@@ -196,10 +196,12 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 		}
 
 		public function filter_get_term_object( $term_obj ) {
+
 			return get_term_by( 'term_taxonomy_id', $this->obj_array[ 'id' ], $this->obj_array[ 'taxonomy' ], OBJECT, 'raw' );
 		}
 
 		public function filter_get_user_object( $user_obj ) {
+
 			return get_userdata( $this->obj_array[ 'id' ] );
 		}
 	}
