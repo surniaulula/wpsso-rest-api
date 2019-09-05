@@ -12,7 +12,7 @@
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Enhances the WordPress REST API post, term, and user queries with an array of meta tags and Schema markup.
  * Requires At Least: 4.7
- * Tested Up To: 5.2.2
+ * Tested Up To: 5.2.3
  * Version: 2.0.2
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
@@ -91,6 +91,7 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 		}
 
 		public static function required_check() {
+
 			if ( ! class_exists( 'Wpsso' ) ) {
 				add_action( 'all_admin_notices', array( __CLASS__, 'required_notice' ) );
 			}
@@ -115,7 +116,7 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 					require_once trailingslashit( ABSPATH ) . 'wp-admin/includes/plugin.php';
 				}
 
-				deactivate_plugins( $info[ 'base' ], true );	// $silent is true
+				deactivate_plugins( $info[ 'base' ], $silent = true );
 
 				wp_die( '<p>' . sprintf( $die_msg, $info[ 'name' ], $info[ 'req' ][ 'name' ], $info[ 'req' ][ 'short' ], $info[ 'short' ] ) . '</p>' );
 
@@ -151,9 +152,9 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 						require_once trailingslashit( ABSPATH ) . 'wp-admin/includes/plugin.php';
 					}
 
-					$plugin_data = get_plugin_data( __FILE__, false );	// $markup is false
+					$plugin_data = get_plugin_data( __FILE__, $markup = false );
 
-					deactivate_plugins( $plugin, true );	// $silent is true
+					deactivate_plugins( $plugin, $silent = true );
 
 					wp_die( 
 						'<p>' . sprintf( __( '%1$s requires %2$s version %3$s or higher and has been deactivated.',
