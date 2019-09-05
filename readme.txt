@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-rest-api/assets/
 Tags: rest, api, rest api, meta tags, schema, markup
 Contributors: jsmoriss
 Requires At Least: 4.7
-Tested Up To: 5.2.2
+Tested Up To: 5.2.3
 Stable Tag: 2.0.2
 
 Enhances the WordPress REST API post, term, and user queries with an array of meta tags and Schema markup.
