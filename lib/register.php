@@ -105,9 +105,6 @@ if ( ! class_exists( 'WpssoRestRegister' ) ) {
 
 					WpssoUtil::save_all_times( 'wpssorest', $version );
 				}
-
-			} else {
-				WpssoRest::required_notice( $deactivate = true );
 			}
 		}
 
