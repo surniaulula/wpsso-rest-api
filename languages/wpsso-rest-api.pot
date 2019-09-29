@@ -16,7 +16,7 @@ msgstr ""
 msgctxt "plugin description"
 msgid ""
 "Enhances the WordPress REST API post, term, and user queries with an array "
-"of meta tags and Schema markup."
+"of Social and Search Engine Optimization meta tags and Schema markup."
 msgstr ""
 
 #: wpsso-rest-api.php:106
@@ -50,7 +50,7 @@ msgstr ""
 #. Description of the plugin/theme
 msgid ""
 "Enhances the WordPress REST API post, term, and user queries with an array "
-"of meta tags and Schema markup."
+"of Social and Search Engine Optimization meta tags and Schema markup."
 msgstr ""
 
 #. Author of the plugin/theme
