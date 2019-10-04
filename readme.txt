@@ -65,12 +65,12 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.0.3-rc.1 (2019/10/03)**
+**Version 2.0.3 (2019/10/04)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* Maintenance release for WPSSO Core v6.6.1.
+	* Maintenance release for WPSSO Core v6.7.0.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -89,11 +89,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.0.3-rc.1 =
+= 2.0.3 =
 
-(2019/10/03) Maintenance release for WPSSO Core v6.6.1.
-
-= 2.0.2 =
-
-(2019/08/10) Fixed WpssoHead::get_head_array() `$use_post` argument value from post/term/user ID to `false`.
+(2019/10/04) Maintenance release for WPSSO Core v6.7.0.
 
