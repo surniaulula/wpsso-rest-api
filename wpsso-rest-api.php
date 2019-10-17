@@ -12,7 +12,7 @@
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Enhances the WordPress REST API post, term, and user queries with an array of Social and Search Engine Optimization meta tags and Schema markup.
  * Requires At Least: 4.7
- * Tested Up To: 5.2.4
+ * Tested Up To: 5.3
  * Version: 2.0.3
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
