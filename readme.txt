@@ -83,7 +83,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Improvements**
 	* None.
 * **Bugfixes**
-	* Fixed WpssoHead::get_head_array() `$use_post` argument value from post/term/user ID to `false`.
+	* Fixed WpssoHead->get_head_array() `$use_post` argument value from post/term/user ID to `false`.
 * **Developer Notes**
 	* None.
 
