@@ -26,7 +26,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	die( 'These aren\'t the droids you\'re looking for...' );
+	die( 'These aren\'t the droids you\'re looking for.' );
 }
 
 if ( ! class_exists( 'WpssoRest' ) ) {
@@ -54,9 +54,10 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 
 		public function __construct() {
 
-			require_once ( dirname( __FILE__ ) . '/lib/config.php' );
+			require_once dirname( __FILE__ ) . '/lib/config.php';
 
 			WpssoRestConfig::set_constants( __FILE__ );
+
 			WpssoRestConfig::require_libs( __FILE__ );	// Includes the register.php class library.
 
 			$this->reg = new WpssoRestRegister();		// activate, deactivate, uninstall hooks
