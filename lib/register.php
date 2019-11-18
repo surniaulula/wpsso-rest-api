@@ -103,7 +103,7 @@ if ( ! class_exists( 'WpssoRestRegister' ) ) {
 
 					$version = WpssoRestConfig::$cf[ 'plugin' ][ 'wpssorest' ][ 'version' ];
 
-					WpssoUtil::save_all_times( 'wpssorest', $version );
+					WpssoUtil::register_ext_version( 'wpssorest', $version );
 				}
 			}
 		}
