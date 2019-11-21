@@ -99,11 +99,14 @@ if ( ! class_exists( 'WpssoRestRegister' ) ) {
 
 			if ( class_exists( 'Wpsso' ) ) {
 
-				if ( class_exists( 'WpssoUtil' ) ) {	// Just in case.
+				/**
+				 * Register plugin install, activation, update times.
+				 */
+				if ( class_exists( 'WpssoUtilReg' ) ) {	// Since WPSSO v6.13.0.
 
 					$version = WpssoRestConfig::$cf[ 'plugin' ][ 'wpssorest' ][ 'version' ];
 
-					WpssoUtil::register_ext_version( 'wpssorest', $version );
+					WpssoUtilReg::update_ext_version( 'wpssorest', $version );
 				}
 			}
 		}
