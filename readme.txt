@@ -65,7 +65,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.0.4-dev.2 (TBD)**
+**Version 2.0.4-dev.2 (2019/11/21)**
 
 * **New Features**
 	* None.
@@ -87,18 +87,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* None.
 
-**Version 2.0.2 (2019/08/10)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* Fixed WpssoHead->get_head_array() `$use_post` argument value from post/term/user ID to `false`.
-* **Developer Notes**
-	* None.
-
 == Upgrade Notice ==
+
+= 2.0.4-dev.2 =
+
+(2019/11/21) Update for the new WpssoUtilReg class in WPSSO Core v6.13.0.
 
 = 2.0.3 =
 
