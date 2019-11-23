@@ -10,7 +10,7 @@ Tags: rest, api, rest api, meta tags, schema, markup
 Contributors: jsmoriss
 Requires At Least: 4.7
 Tested Up To: 5.3
-Stable Tag: 2.0.3
+Stable Tag: 2.0.4
 
 Enhances the WordPress REST API post, term, and user queries with an array of Social and Search Engine Optimization meta tags and Schema markup.
 
@@ -76,24 +76,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* Updated `WpssoRestRegister->activate_plugin()` for the new WpssoUtilReg class in WPSSO Core v6.13.0.
 
-**Version 2.0.3 (2019/10/04)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Maintenance release for WPSSO Core v6.7.0.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-
 == Upgrade Notice ==
 
 = 2.0.4 =
 
 (2019/11/23) Update for the new WpssoUtilReg class in WPSSO Core v6.13.0.
-
-= 2.0.3 =
-
-(2019/10/04) Maintenance release for WPSSO Core v6.7.0.
 
