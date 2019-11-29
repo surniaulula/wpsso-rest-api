@@ -54,7 +54,7 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
 
-		public static function set_constants( $plugin_filepath ) { 
+		public static function set_constants( $plugin_file_path ) { 
 
 			if ( defined( 'WPSSOREST_VERSION' ) ) {	// Define constants only once.
 				return;
@@ -65,15 +65,15 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 			/**
 			 * Define fixed constants.
 			 */
-			define( 'WPSSOREST_FILEPATH', $plugin_filepath );						
+			define( 'WPSSOREST_FILEPATH', $plugin_file_path );						
 			define( 'WPSSOREST_PLUGINBASE', $info[ 'base' ] );	// Example: wpsso-rest-api/wpsso-rest-api.php.
-			define( 'WPSSOREST_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
+			define( 'WPSSOREST_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_file_path ) ) ) );
 			define( 'WPSSOREST_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-rest-api.
-			define( 'WPSSOREST_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
+			define( 'WPSSOREST_URLPATH', trailingslashit( plugins_url( '', $plugin_file_path ) ) );
 			define( 'WPSSOREST_VERSION', $info[ 'version' ] );						
 		}
 
-		public static function require_libs( $plugin_filepath ) {
+		public static function require_libs( $plugin_file_path ) {
 
 			require_once WPSSOREST_PLUGINDIR . 'lib/register.php';
 			require_once WPSSOREST_PLUGINDIR . 'lib/filters.php';
@@ -85,11 +85,11 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 
 			if ( false === $ret && ! empty( $filespec ) ) {
 
-				$filepath = WPSSOREST_PLUGINDIR . 'lib/' . $filespec . '.php';
+				$file_path = WPSSOREST_PLUGINDIR . 'lib/' . $filespec . '.php';
 
-				if ( file_exists( $filepath ) ) {
+				if ( file_exists( $file_path ) ) {
 
-					require_once $filepath;
+					require_once $file_path;
 
 					if ( empty( $classname ) ) {
 						return SucomUtil::sanitize_classname( 'wpssorest' . $filespec, $allow_underscore = false );
