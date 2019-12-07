@@ -60,11 +60,11 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 
 			WpssoRestConfig::require_libs( __FILE__ );	// Includes the register.php class library.
 
-			$this->reg = new WpssoRestRegister();		// activate, deactivate, uninstall hooks
+			$this->reg = new WpssoRestRegister();		// Activate, deactivate, uninstall hooks.
 
 			if ( is_admin() ) {
 				add_action( 'admin_init', array( __CLASS__, 'required_check' ) );
-				add_action( 'admin_init', array( __CLASS__, 'check_wp_version' ) );	// Requires wp v4.7 or better.
+				add_action( 'admin_init', array( __CLASS__, 'check_wp_version' ) );
 			}
 
 			/**
