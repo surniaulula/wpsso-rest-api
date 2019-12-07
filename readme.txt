@@ -8,6 +8,7 @@ License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-rest-api/assets/
 Tags: rest, api, rest api, meta tags, schema, markup
 Contributors: jsmoriss
+Requires PHP: 5.5
 Requires At Least: 4.7
 Tested Up To: 5.3
 Stable Tag: 2.0.4
