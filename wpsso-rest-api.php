@@ -13,7 +13,7 @@
  * Description: Enhances the WordPress REST API post, term, and user queries with an array of Social and Search Engine Optimization meta tags and Schema markup.
  * Requires PHP: 5.5
  * Requires At Least: 4.7
- * Tested Up To: 5.3
+ * Tested Up To: 5.3.1
  * Version: 2.0.4
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
