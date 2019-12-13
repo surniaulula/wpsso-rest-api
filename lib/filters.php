@@ -159,25 +159,25 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 				/**
 				 * Save the first array element, which is the html formatted meta tag or script.
 				 */
-				if ( ! empty( $meta[0] ) ) {		// Just in case we don't have an html value.
+				if ( ! empty( $meta[ 0 ] ) ) {		// Just in case we don't have an html value.
 
-					$result[ 'html' ][] = $meta[0];	// Save the html, including any json script blocks.
+					$result[ 'html' ][] = $meta[ 0 ];	// Save the html, including any json script blocks.
 
 					/**
 					 * If the html contains a script, decode and save the ld+json as an array.
 					 */
-					if ( strpos( $meta[0], '<script ' ) === 0 ) {
+					if ( strpos( $meta[ 0 ], '<script ' ) === 0 ) {
 
 						/**
 						 * Extract the script type and its value.
 						 */
-						if ( preg_match( '/^<script type="([^\'"]+)">(.*)<\/script>$/s', $meta[0], $matches ) ) {
+						if ( preg_match( '/^<script type="([^\'"]+)">(.*)<\/script>$/s', $meta[ 0 ], $matches ) ) {
 
-							switch ( $matches[1] ) {
+							switch ( $matches[ 1 ] ) {
 
 								case 'application/ld+json':
 
-									$result[ 'json' ][] = json_decode( $matches[2], $assoc = true );
+									$result[ 'json' ][] = json_decode( $matches[ 2 ], $assoc = true );
 
 									break;
 							}
