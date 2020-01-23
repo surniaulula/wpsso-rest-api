@@ -3,4 +3,4 @@
 /**
  * Extract of translatable text strings from the static config array.
  */
-_x( 'Enhances the WordPress REST API post, term, and user queries with an array of Social and Search Engine Optimization meta tags and Schema markup.', 'plugin description', 'wpsso-rest-api' );
+_x( 'Enhances the WordPress REST API post, term, and user query results with an array of social and SEO meta tags, and Schema JSON-LD markup.', 'plugin description', 'wpsso-rest-api' );
