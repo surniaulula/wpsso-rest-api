@@ -13,13 +13,13 @@ Requires At Least: 4.7
 Tested Up To: 5.3.2
 Stable Tag: 2.0.4
 
-Enhances the WordPress REST API post, term, and user queries with an array of Social and Search Engine Optimization meta tags and Schema markup.
+Enhances the WordPress REST API post, term, and user query results with an array of social and SEO meta tags, and Schema JSON-LD markup.
 
 == Description ==
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-rest-api/assets/icon-256x256.png"></p>
 
-Enhances the WordPress REST API post, term, and user queries with an array of Social and Search Engine Optimization meta tags and Schema markup.
+Enhances the WordPress REST API post, term, and user query results with an array of social and SEO meta tags, and Schema JSON-LD markup.
 
 Includes a new `head` element in the WordPress REST API query result to provide an `html`, `json`, and `parts` array.
 

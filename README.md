@@ -2,7 +2,7 @@
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO REST API</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>Enhances the WordPress REST API post, term, and user queries with an array of Social and Search Engine Optimization meta tags and Schema markup.</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>Enhances the WordPress REST API post, term, and user query results with an array of social and SEO meta tags, and Schema JSON-LD markup.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.0.4</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires PHP</th><td>5.5 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires WordPress</th><td>4.7 or newer</td></tr>
@@ -16,7 +16,7 @@
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-rest-api/assets/icon-256x256.png"></p>
 
-<p>Enhances the WordPress REST API post, term, and user queries with an array of Social and Search Engine Optimization meta tags and Schema markup.</p>
+<p>Enhances the WordPress REST API post, term, and user query results with an array of social and SEO meta tags, and Schema JSON-LD markup.</p>
 
 <p>Includes a new <code>head</code> element in the WordPress REST API query result to provide an <code>html</code>, <code>json</code>, and <code>parts</code> array.</p>
 
