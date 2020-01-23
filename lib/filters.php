@@ -48,6 +48,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			$field_name = 'head';
 
 			foreach ( $this->p->util->get_post_types( 'names' ) as $ptn ) {
+
 				register_rest_field( $ptn, 'head', array(
 					'get_callback'    => array( $this, 'get_post' ),
 					'update_callback' => null,
@@ -56,6 +57,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			}
 
 			foreach ( $this->p->util->get_taxonomies( 'names' ) as $ttn ) {
+
 				register_rest_field( $ttn, 'head', array(
 					'get_callback'    => array( $this, 'get_term' ),
 					'update_callback' => null,
