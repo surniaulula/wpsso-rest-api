@@ -48,7 +48,7 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 		/**
 		 * Reference Variables (config, options, modules, etc.).
 		 */
-		private $have_req_min = true;	// Have minimum wpsso version.
+		private $have_min_version = true;	// Have minimum wpsso version.
 
 		private static $instance;
 		private static $wp_min_version = '4.7';
@@ -164,7 +164,7 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 
 			if ( version_compare( $plugin_version, $info[ 'req' ][ 'min_version' ], '<' ) ) {
 
-				$this->have_req_min = false;
+				$this->have_min_version = false;
 
 				return $cf;
 			}
@@ -174,7 +174,7 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 
 		public function wpsso_get_avail( $avail ) {
 
-			if ( ! $this->have_req_min ) {
+			if ( ! $this->have_min_version ) {
 
 				$avail[ 'p_ext' ][ 'rest' ] = false;	// Signal that this extension / add-on is not available.
 
@@ -204,7 +204,7 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( ! $this->have_req_min ) {
+			if ( ! $this->have_min_version ) {
 				return;	// Stop here.
 			}
 
@@ -217,7 +217,7 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 				$this->p->debug->mark();
 			}
 
-			if ( ! $this->have_req_min ) {
+			if ( ! $this->have_min_version ) {
 
 				$this->min_version_notice();
 
