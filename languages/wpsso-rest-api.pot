@@ -15,8 +15,8 @@ msgstr ""
 #: lib/gettext-config.php:6
 msgctxt "plugin description"
 msgid ""
-"Enhances the WordPress REST API post, term, and user query results with an "
-"array of social and SEO meta tags, and Schema JSON-LD markup."
+"Enhances the WordPress REST API post, term and user queries with an array of "
+"social meta tags, SEO HTML tags and Schema JSON-LD markup."
 msgstr ""
 
 #: wpsso-rest-api.php:108
@@ -33,7 +33,7 @@ msgstr ""
 msgid "Please upgrade %1$s before trying to re-activate the %2$s plugin."
 msgstr ""
 
-#: wpsso-rest-api.php:236
+#: wpsso-rest-api.php:239
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
@@ -49,8 +49,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Enhances the WordPress REST API post, term, and user query results with an "
-"array of social and SEO meta tags, and Schema JSON-LD markup."
+"Enhances the WordPress REST API post, term and user queries with an array of "
+"social meta tags, SEO HTML tags and Schema JSON-LD markup."
 msgstr ""
 
 #. Author of the plugin/theme

@@ -10,7 +10,7 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: Enhances the WordPress REST API post, term, and user query results with an array of social and SEO meta tags, and Schema JSON-LD markup.
+ * Description: Enhances the WordPress REST API post, term and user queries with an array of social meta tags, SEO HTML tags and Schema JSON-LD markup.
  * Requires PHP: 5.6
  * Requires At Least: 4.7
  * Tested Up To: 5.4
@@ -211,6 +211,9 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 			$this->filters = new WpssoRestFilters( $this->p );
 		}
 
+		/**
+		 * All WPSSO objects are instantiated and configured.
+		 */
 		public function wpsso_init_plugin() {
 
 			if ( $this->p->debug->enabled ) {
@@ -219,7 +222,7 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 
 			if ( ! $this->have_min_version ) {
 
-				$this->min_version_notice();
+				$this->min_version_notice();	// Show minimum version notice.
 
 				return;	// Stop here.
 			}
