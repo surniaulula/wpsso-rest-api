@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.1.0-dev.4 (2020/03/25)**
+**Version 2.1.0-b.1 (2020/03/26)**
 
 * **New Features**
 	* None.
@@ -98,9 +98,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.1.0-dev.4 =
+= 2.1.0-b.1 =
 
-(2020/03/25) Minor update for French translation strings.
+(2020/03/26) Minor update for French translation strings.
 
 = 2.0.4 =
 
