@@ -14,7 +14,7 @@
  * Requires PHP: 5.6
  * Requires At Least: 4.7
  * Tested Up To: 5.4
- * Version: 2.1.0
+ * Version: 2.2.0-dev.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -50,8 +50,9 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 		 */
 		private $have_min_version = true;	// Have minimum wpsso version.
 
+		private static $wp_min_version = '4.7';	// Minimum WordPress version.
+
 		private static $instance;
-		private static $wp_min_version = '4.7';
 
 		public function __construct() {
 
@@ -63,10 +64,9 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 
 			$this->reg = new WpssoRestRegister();		// Activate, deactivate, uninstall hooks.
 
-			if ( is_admin() ) {
-				add_action( 'admin_init', array( __CLASS__, 'required_check' ) );
-				add_action( 'admin_init', array( __CLASS__, 'check_wp_version' ) );
-			}
+			add_action( 'admin_init', array( __CLASS__, 'check_wp_version' ) );
+
+			add_action( 'all_admin_notices', array( __CLASS__, 'show_required_notices' ) );
 
 			/**
 			 * Add WPSSO filter hooks.
@@ -92,32 +92,34 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 			return self::$instance;
 		}
 
-		public static function required_check() {
-
-			if ( ! class_exists( 'Wpsso' ) ) {
-				add_action( 'all_admin_notices', array( __CLASS__, 'required_notice' ) );
-			}
-		}
-
-		public static function required_notice() {
-
-			self::wpsso_init_textdomain();
+		public static function show_required_notices() {
 
 			$info = WpssoRestConfig::$cf[ 'plugin' ][ 'wpssorest' ];
 
-			$error_msg = __( 'The %1$s add-on requires the %2$s plugin &mdash; install and activate the %3$s plugin or <a href="%4$s">deactivate the %5$s add-on</a>.', 'wpsso-rest-api' );
+			foreach ( $info[ 'req' ] as $ext => $req_info ) {
 
-			$deactivate_url = html_entity_decode( wp_nonce_url( add_query_arg( array(
-				'action'        => 'deactivate',
-				'plugin'        => $info[ 'base' ],
-				'plugin_status' => 'all',
-				'paged'         => 1,
-				's'             => '',
-			), admin_url( 'plugins.php' ) ), 'deactivate-plugin_' . $info[ 'base' ] ) );
+				if ( isset( $req_info[ 'class' ] ) ) {	// Just in case.
+					if ( class_exists( $req_info[ 'class' ] ) ) {
+						continue;	// Requirement satisfied.
+					}
+				} else continue;	// Nothing to check.
 
-			echo '<div class="notice notice-error error"><p>';
-			echo sprintf( $error_msg, $info[ 'name' ], $info[ 'req' ][ 'name' ], $info[ 'req' ][ 'short' ], $deactivate_url, $info[ 'short' ] );
-			echo '</p></div>';
+				$deactivate_url = html_entity_decode( wp_nonce_url( add_query_arg( array(
+					'action'        => 'deactivate',
+					'plugin'        => $info[ 'base' ],
+					'plugin_status' => 'all',
+					'paged'         => 1,
+					's'             => '',
+				), admin_url( 'plugins.php' ) ), 'deactivate-plugin_' . $info[ 'base' ] ) );
+
+				self::wpsso_init_textdomain();	// If not already loaded, load the textdomain now.
+
+				$error_msg = __( 'The %1$s add-on requires the %2$s plugin &mdash; install and activate the plugin or <a href="%3$s">deactivate this add-on</a>.', 'wpsso-am' );
+
+				echo '<div class="notice notice-error error"><p>';
+				echo sprintf( $error_msg, $info[ 'name' ], $req_info[ 'name' ], $deactivate_url );
+				echo '</p></div>';
+			}
 		}
 
 		public static function check_wp_version() {
@@ -130,7 +132,7 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 
 				if ( is_plugin_active( $plugin ) ) {
 
-					self::wpsso_init_textdomain();
+					self::wpsso_init_textdomain();	// If not already loaded, load the textdomain now.
 
 					if ( ! function_exists( 'deactivate_plugins' ) ) {
 						require_once trailingslashit( ABSPATH ) . 'wp-admin/includes/plugin.php';
@@ -152,6 +154,14 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 
 		public static function wpsso_init_textdomain() {
 
+			static $do_once = null;
+
+			if ( true === $do_once ) {
+				return;
+			}
+
+			$do_once = true;
+
 			load_plugin_textdomain( 'wpsso-rest-api', false, 'wpsso-rest-api/languages/' );
 		}
 
@@ -162,7 +172,9 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 
 			$info = WpssoRestConfig::$cf[ 'plugin' ][ 'wpssorest' ];
 
-			if ( version_compare( $plugin_version, $info[ 'req' ][ 'min_version' ], '<' ) ) {
+			$req_info = $info[ 'req' ][ 'wpsso' ];
+
+			if ( version_compare( $plugin_version, $req_info[ 'min_version' ], '<' ) ) {
 
 				$this->have_min_version = false;
 
@@ -236,8 +248,10 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 
 			$info = WpssoRestConfig::$cf[ 'plugin' ][ 'wpssorest' ];
 
+			$req_info = $info[ 'req' ][ 'wpsso' ];
+
 			$error_msg = sprintf( __( 'The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed).',
-				'wpsso-rest-api' ), $info[ 'name' ], $info[ 'version' ], $info[ 'req' ][ 'short' ], $info[ 'req' ][ 'min_version' ],
+				'wpsso-rest-api' ), $info[ 'name' ], $info[ 'version' ], $req_info[ 'name' ], $req_info[ 'min_version' ],
 					$this->p->cf[ 'plugin' ][ 'wpsso' ][ 'version' ] );
 
 			$this->p->notice->err( $error_msg );

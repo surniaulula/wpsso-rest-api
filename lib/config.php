@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssorest' => array(			// Plugin acronym.
-					'version'     => '2.1.0',	// Plugin version.
+					'version'     => '2.2.0-dev.1',	// Plugin version.
 					'opt_version' => '1',		// Increment when changing default option values.
 					'short'       => 'WPSSO REST',	// Short plugin name.
 					'name'        => 'WPSSO REST API',
@@ -26,17 +26,31 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 					'update_auth' => '',		// No premium version.
 					'text_domain' => 'wpsso-rest-api',
 					'domain_path' => '/languages',
-					'req'         => array(
-						'short'       => 'WPSSO Core',
-						'name'        => 'WPSSO Core',
-						'min_version' => '6.27.1',
+
+					/**
+					 * Required plugin and its version.
+					 */
+					'req' => array(
+						'wpsso' => array(
+							'class'       => 'Wpsso',
+							'name'        => 'WPSSO Core',
+							'min_version' => '6.27.1',
+						),
 					),
+
+					/**
+					 * Relative paths to asset images.
+					 */
 					'assets' => array(
 						'icons' => array(
 							'low'  => 'images/icon-128x128.png',
 							'high' => 'images/icon-256x256.png',
 						),
 					),
+
+					/**
+					 * Library files loaded and instantiated by WPSSO.
+					 */
 					'lib' => array(
 						'pro' => array(
 						),
