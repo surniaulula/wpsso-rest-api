@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssorest' => array(			// Plugin acronym.
-					'version'     => '2.2.0-dev.1',	// Plugin version.
+					'version'     => '2.2.0-dev.2',	// Plugin version.
 					'opt_version' => '1',		// Increment when changing default option values.
 					'short'       => 'WPSSO REST',	// Short plugin name.
 					'name'        => 'WPSSO REST API',
@@ -34,12 +34,12 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 						'wpsso' => array(
 							'class'       => 'Wpsso',
 							'name'        => 'WPSSO Core',
-							'min_version' => '6.27.1',
+							'min_version' => '6.27.2-dev.2',
 						),
 					),
 
 					/**
-					 * Relative paths to asset images.
+					 * URLs or relative paths to plugin banners and icons.
 					 */
 					'assets' => array(
 						'icons' => array(
