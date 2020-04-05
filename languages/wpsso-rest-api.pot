@@ -15,8 +15,8 @@ msgstr ""
 #: lib/gettext-config.php:6
 msgctxt "plugin description"
 msgid ""
-"Enhances the WordPress REST API post, term and user queries with an array of "
-"social meta tags, SEO HTML tags and Schema JSON-LD markup."
+"Enhances the WordPress REST API Post, Term and User Queries with an Array of "
+"Social Meta Tags, SEO HTML Tags and Schema JSON-LD Markup."
 msgstr ""
 
 #: wpsso-rest-api.php:123
@@ -49,8 +49,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Enhances the WordPress REST API post, term and user queries with an array of "
-"social meta tags, SEO HTML tags and Schema JSON-LD markup."
+"Enhances the WordPress REST API Post, Term and User Queries with an Array of "
+"Social Meta Tags, SEO HTML Tags and Schema JSON-LD Markup."
 msgstr ""
 
 #. Author of the plugin/theme

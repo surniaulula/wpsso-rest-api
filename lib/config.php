@@ -20,7 +20,7 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 					'opt_version' => '1',		// Increment when changing default option values.
 					'short'       => 'WPSSO REST',	// Short plugin name.
 					'name'        => 'WPSSO REST API',
-					'desc'        => 'Enhances the WordPress REST API post, term and user queries with an array of social meta tags, SEO HTML tags and Schema JSON-LD markup.',
+					'desc'        => 'Enhances the WordPress REST API Post, Term and User Queries with an Array of Social Meta Tags, SEO HTML Tags and Schema JSON-LD Markup.',
 					'slug'        => 'wpsso-rest-api',
 					'base'        => 'wpsso-rest-api/wpsso-rest-api.php',
 					'update_auth' => '',		// No premium version.
