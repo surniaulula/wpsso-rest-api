@@ -13,7 +13,7 @@ Requires At Least: 4.7
 Tested Up To: 5.4
 Stable Tag: 2.1.0
 
-Enhances the WordPress REST API post, term and user queries with an array of social meta tags, SEO HTML tags and Schema JSON-LD markup.
+Enhances the WordPress REST API Post, Term and User Queries with an Array of Social Meta Tags, SEO HTML Tags and Schema JSON-LD Markup.
 
 == Description ==
 
