@@ -14,7 +14,7 @@
  * Requires PHP: 5.6
  * Requires At Least: 4.7
  * Tested Up To: 5.4
- * Version: 2.2.0-rc.3
+ * Version: 2.2.0
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -218,6 +218,11 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 			}
 
 			if ( ! $this->have_min_version ) {
+
+				if ( $this->p->debug->enabled ) {
+					$this->p->debug->log( 'exiting early: have_min_version is false' );
+				}
+
 				return;	// Stop here.
 			}
 
