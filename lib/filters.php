@@ -47,18 +47,18 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 
 			$field_name = 'head';
 
-			foreach ( $this->p->util->get_post_types( 'names' ) as $ptn ) {	// Get public post types.
+			foreach ( $this->p->util->get_post_types( 'names' ) as $name ) {
 
-				register_rest_field( $ptn, 'head', array(
+				register_rest_field( $name, 'head', array(
 					'get_callback'    => array( $this, 'get_post' ),
 					'update_callback' => null,
 					'schema'          => null,
 				) );
 			}
 
-			foreach ( $this->p->util->get_taxonomies( 'names' ) as $ttn ) {
+			foreach ( $this->p->util->get_taxonomies( 'names' ) as $name ) {
 
-				register_rest_field( $ttn, 'head', array(
+				register_rest_field( $name, 'head', array(
 					'get_callback'    => array( $this, 'get_term' ),
 					'update_callback' => null,
 					'schema'          => null,
