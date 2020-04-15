@@ -47,7 +47,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 
 			$field_name = 'head';
 
-			foreach ( $this->p->util->get_post_types( 'names' ) as $ptn ) {
+			foreach ( $this->p->util->get_post_types( 'names' ) as $ptn ) {	// Get public post types.
 
 				register_rest_field( $ptn, 'head', array(
 					'get_callback'    => array( $this, 'get_post' ),
