@@ -41,8 +41,8 @@ The [WPSSO Schema JSON-LD Markup add-on](https://wordpress.org/plugins/wpsso-sch
 
 <h3 class="top">Install and Uninstall</h3>
 
-* [Install the WPSSO REST Add-on](https://wpsso.com/docs/plugins/wpsso-rest-api/installation/install-the-plugin/)
-* [Uninstall the WPSSO REST Add-on](https://wpsso.com/docs/plugins/wpsso-rest-api/installation/uninstall-the-plugin/)
+* [Install the WPSSO REST API add-on](https://wpsso.com/docs/plugins/wpsso-rest-api/installation/install-the-plugin/).
+* [Uninstall the WPSSO REST API add-on](https://wpsso.com/docs/plugins/wpsso-rest-api/installation/uninstall-the-plugin/).
 
 == Frequently Asked Questions ==
 

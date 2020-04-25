@@ -40,8 +40,8 @@
 <h3 class="top">Install and Uninstall</h3>
 
 <ul>
-<li><a href="https://wpsso.com/docs/plugins/wpsso-rest-api/installation/install-the-plugin/">Install the WPSSO REST Add-on</a></li>
-<li><a href="https://wpsso.com/docs/plugins/wpsso-rest-api/installation/uninstall-the-plugin/">Uninstall the WPSSO REST Add-on</a></li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-rest-api/installation/install-the-plugin/">Install the WPSSO REST API add-on</a>.</li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-rest-api/installation/uninstall-the-plugin/">Uninstall the WPSSO REST API add-on</a>.</li>
 </ul>
 
 
