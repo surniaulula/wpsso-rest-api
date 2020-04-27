@@ -52,10 +52,6 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 					 * Library files loaded and instantiated by WPSSO.
 					 */
 					'lib' => array(
-						'pro' => array(
-						),
-						'std' => array(
-						),
 					),
 				),
 			),
