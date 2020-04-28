@@ -132,6 +132,8 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 
 		/**
 		 * Check for the minimum required WordPress version.
+		 *
+		 * If we don't have the minimum required version, then de-activate ourselves and die.
 		 */
 		public static function check_wp_version() {
 
@@ -165,7 +167,7 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 
 			static $do_once = null;
 
-			if ( true === $do_once ) {
+			if ( null !== $do_once ) {	// Already loaded.
 				return;
 			}
 
