@@ -64,6 +64,9 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 
 			$this->reg = new WpssoRestRegister();		// Activate, deactivate, uninstall hooks.
 
+			/**
+			 * Check for the minimum required WordPress version.
+			 */
 			add_action( 'admin_init', array( __CLASS__, 'check_wp_version' ) );
 
 			/**
@@ -127,6 +130,9 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 			}
 		}
 
+		/**
+		 * Check for the minimum required WordPress version.
+		 */
 		public static function check_wp_version() {
 
 			global $wp_version;
@@ -135,25 +141,20 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 
 				$plugin = plugin_basename( __FILE__ );
 
-				if ( is_plugin_active( $plugin ) ) {
+				self::wpsso_init_textdomain();	// If not already loaded, load the textdomain now.
 
-					self::wpsso_init_textdomain();	// If not already loaded, load the textdomain now.
-
-					if ( ! function_exists( 'deactivate_plugins' ) ) {
-						require_once trailingslashit( ABSPATH ) . 'wp-admin/includes/plugin.php';
-					}
-
-					$plugin_data = get_plugin_data( __FILE__, $markup = false );
-
-					deactivate_plugins( $plugin, $silent = true );
-
-					wp_die( 
-						'<p>' . sprintf( __( '%1$s requires %2$s version %3$s or higher and has been deactivated.',
-							'wpsso-rest-api' ), $plugin_data[ 'Name' ], 'WordPress', self::$wp_min_version ) . '</p>' . 
-						'<p>' . sprintf( __( 'Please upgrade %1$s before trying to re-activate the %2$s plugin.',
-							'wpsso-rest-api' ), 'WordPress', $plugin_data[ 'Name' ] ) . '</p>'
-					);
+				if ( ! function_exists( 'deactivate_plugins' ) ) {
+					require_once trailingslashit( ABSPATH ) . 'wp-admin/includes/plugin.php';
 				}
+
+				$plugin_data = get_plugin_data( __FILE__, $markup = false );
+
+				deactivate_plugins( $plugin, $silent = true );
+
+				wp_die( '<p>' . sprintf( __( '%1$s requires %2$s version %3$s or higher and has been deactivated.',
+					'wpsso-rest-api' ), $plugin_data[ 'Name' ], 'WordPress', self::$wp_min_version ) . ' ' . 
+						sprintf( __( 'Please upgrade %1$s before trying to re-activate the %2$s plugin.',
+							'wpsso-rest-api' ), 'WordPress', $plugin_data[ 'Name' ] ) . '</p>' );
 			}
 		}
 
