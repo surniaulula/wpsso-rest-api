@@ -3,7 +3,7 @@
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO REST API</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>Enhances the WordPress REST API Post, Term and User Queries with an Array of Social Meta Tags, SEO HTML Tags and Schema JSON-LD Markup.</td></tr>
-<tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.2.0</td></tr>
+<tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.3.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires PHP</th><td>5.6 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires WordPress</th><td>4.7 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>5.4.1</td></tr>
