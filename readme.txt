@@ -113,36 +113,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.7.
 	* WPSSO Core v7.3.0.
 
-**Version 2.1.0 (2020/03/27)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Minor update for French translation strings.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.7.
-	* WPSSO Core v6.27.1.
-
 == Upgrade Notice ==
 
 = 2.4.0 =
 
 (2020/06/04) Updated method calls for WPSSO Core v7.8.0.
-
-= 2.3.0 =
-
-(2020/05/09) Refactored the required plugin check to (optionally) check the class name and a version constant.
-
-= 2.2.0 =
-
-(2020/04/06) Refactored WPSSO Core active and minimum version dependency checks.
-
-= 2.1.0 =
-
-(2020/03/27) Minor update for French translation strings.
 
