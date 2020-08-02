@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO REST API 2.2.0\n"
+"Project-Id-Version: WPSSO REST API 2.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-rest-api\n"
-"POT-Creation-Date: 2020-07-31 07:12-0700\n"
-"PO-Revision-Date: 2020-07-31 07:12-0700\n"
+"POT-Creation-Date: 2020-08-02 10:41-0700\n"
+"PO-Revision-Date: 2020-08-02 10:41-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -19,11 +19,11 @@ msgctxt "plugin description"
 msgid "Enhances the WordPress REST API Post, Term and User Queries with an Array of Social Meta Tags, SEO HTML Tags and Schema JSON-LD Markup."
 msgstr "Améliore les requêtes d'articles, termes et utilisateurs de l'API REST de WordPress avec un tableau de balises méta sociales, de balises HTML SEO et balisage de Schéma JSON-LD."
 
-#: wpsso-rest-api.php:241
+#: wpsso-rest-api.php:249
 msgid "The %1$s version %2$s add-on requires the %3$s plugin &mdash; please activate the missing plugin."
 msgstr "L'ajout %1$s version %2$s nécessite l'extension %3$s &mdash; veuillez activer l'extension manquante."
 
-#: wpsso-rest-api.php:244
+#: wpsso-rest-api.php:252
 msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'ajout %1$s version %2$s nécessite %3$s version %4$s ou plus récente (la version %5$s est actuellement installée)."
 
