@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.7
 Tested Up To: 5.5
-Stable Tag: 2.4.0
+Stable Tag: 2.5.0
 
 Enhances the WordPress REST API Post, Term and User Queries with an Array of Social Meta Tags, SEO HTML Tags and Schema JSON-LD Markup.
 
