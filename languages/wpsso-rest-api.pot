@@ -19,13 +19,13 @@ msgid ""
 "Social Meta Tags, SEO HTML Tags and Schema JSON-LD Markup."
 msgstr ""
 
-#: wpsso-rest-api.php:249
+#: wpsso-rest-api.php:270
 msgid ""
 "The %1$s version %2$s add-on requires the %3$s plugin &mdash; please "
 "activate the missing plugin."
 msgstr ""
 
-#: wpsso-rest-api.php:252
+#: wpsso-rest-api.php:283
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
