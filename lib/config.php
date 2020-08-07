@@ -103,9 +103,9 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 			add_filter( 'wpssorest_load_lib', array( 'WpssoRestConfig', 'load_lib' ), 10, 3 );
 		}
 
-		public static function load_lib( $ret = false, $filespec = '', $classname = '' ) {
+		public static function load_lib( $success = false, $filespec = '', $classname = '' ) {
 
-			if ( false === $ret && ! empty( $filespec ) ) {
+			if ( false === $success && ! empty( $filespec ) ) {
 
 				$file_path = WPSSOREST_PLUGINDIR . 'lib/' . $filespec . '.php';
 
@@ -114,14 +114,15 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 					require_once $file_path;
 
 					if ( empty( $classname ) ) {
+
 						return SucomUtil::sanitize_classname( 'wpssorest' . $filespec, $allow_underscore = false );
-					} else {
-						return $classname;
 					}
+
+					return $classname;
 				}
 			}
 
-			return $ret;
+			return $success;
 		}
 	}
 }
