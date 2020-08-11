@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.5.1-b.3 (2020/08/11)**
+**Version 2.6.0-rc.1 (2020/08/11)**
 
 Maintenance release.
 
@@ -117,7 +117,7 @@ Maintenance release.
 
 == Upgrade Notice ==
 
-= 2.5.1-b.3 =
+= 2.6.0-rc.1 =
 
 (2020/08/11) Maintenance release.
 
