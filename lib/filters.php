@@ -6,6 +6,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
+
 	die( 'These aren\'t the droids you\'re looking for.' );
 }
 
@@ -19,12 +20,10 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 
 		public function __construct( &$plugin ) {
 
-			/**
-			 * Just in case - prevent filters from being hooked and executed more than once.
-			 */
 			static $do_once = null;
 
 			if ( true === $do_once ) {
+
 				return;	// Stop here.
 			}
 
@@ -33,6 +32,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
@@ -42,6 +42,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 		public function register_callbacks() {
 
 			if ( ! function_exists( 'register_rest_field' ) ) {	// Just in case.
+
 				return;
 			}
 
@@ -90,6 +91,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 		private function get_head( $mod_name, $obj_array, $field_name, $request ) {
 
 			if ( ! defined( 'SUCOM_DOING_API' ) ) {
+
 				define( 'SUCOM_DOING_API', true );
 			}
 
@@ -201,6 +203,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 				array_shift( $meta );			// Remove the html element (first element in array).
 
 				if ( ! empty( $meta ) ) {		// Just in case we only had an html value.
+
 					$result[ 'parts' ][] = $meta;	// Save the meta tag array, without the html element.
 				}
 			}
