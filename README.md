@@ -16,7 +16,7 @@
 
 <p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-rest-api/assets/icon-256x256.png"></p>
 
-<p>Enhances the WordPress REST API post, term, and user query results with an array of social and SEO meta tags, and Schema JSON-LD markup.</p>
+<p><strong>Enhances the WordPress REST API post, term, and user query results with an array of social meta tags, SEO meta tags, and Schema JSON-LD markup.</strong></p>
 
 <p>Includes a new <code>head</code> element in the WordPress REST API query result to provide an <code>html</code>, <code>json</code>, and <code>parts</code> array.</p>
 
