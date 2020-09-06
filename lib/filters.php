@@ -90,15 +90,11 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 
 		private function get_head( $mod_name, $obj_array, $field_name, $request ) {
 
-			if ( ! defined( 'SUCOM_DOING_API' ) ) {
-
-				define( 'SUCOM_DOING_API', true );
-			}
-
 			/**
 			 * Reference variables for filter_get_term_object() and filter_get_user_object().
 			 */
 			$this->mod_name  = $mod_name;
+
 			$this->obj_array = $obj_array;
 
 			/**
@@ -111,6 +107,8 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			);
 
 			$head_array = array();	// Pre-define - just in case.
+
+			$notice_prev_state = $this->p->notice->disable();
 
 			switch ( $this->mod_name ) {
 			
@@ -125,6 +123,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 				case 'term':
 
 					add_filter( 'sucom_is_term_page', '__return_true', 10 );
+
 					add_filter( 'sucom_get_term_object', array( $this, 'filter_get_term_object' ), 10 );
 
 					$mod = $this->p->term->get_mod( $this->obj_array[ 'id' ], $this->obj_array[ 'taxonomy' ] );
@@ -132,6 +131,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 					$head_array = $this->p->head->get_head_array( $use_post = false, $mod );
 
 					remove_filter( 'sucom_is_term_page', '__return_true', 10 );
+
 					remove_filter( 'sucom_get_term_object', array( $this, 'filter_get_term_object' ), 10 );
 
 					break;
@@ -139,6 +139,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 				case 'user':
 
 					add_filter( 'sucom_is_user_page', '__return_true', 10 );
+
 					add_filter( 'sucom_get_user_object', array( $this, 'filter_get_user_object' ), 10 );
 
 					$mod = $this->p->user->get_mod( $this->obj_array[ 'id' ] );
@@ -146,6 +147,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 					$head_array = $this->p->head->get_head_array( $use_post = false, $mod );
 
 					remove_filter( 'sucom_is_user_page', '__return_true', 10 );
+
 					remove_filter( 'sucom_get_user_object', array( $this, 'filter_get_user_object' ), 10 );
 
 					break;
@@ -154,6 +156,8 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 
 					return $result;	// Object type is unknown - stop here.
 			}
+
+			$this->p->notice->enable( $notice_prev_state );
 
 			/**
 			 * Save any pre-existing array values.
