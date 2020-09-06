@@ -108,7 +108,9 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 
 			$head_array = array();	// Pre-define - just in case.
 
-			$notice_prev_state = $this->p->notice->disable();
+			$debug_prev_state = $this->p->debug->disable( 'html' );	// Optimize and maybe disable debug comments.
+
+			$notice_prev_state = $this->p->notice->disable();	// Optimize and maybe disable notice messages.
 
 			switch ( $this->mod_name ) {
 			
@@ -157,7 +159,9 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 					return $result;	// Object type is unknown - stop here.
 			}
 
-			$this->p->notice->enable( $notice_prev_state );
+			$this->p->notice->enable( $notice_prev_state );		// Maybe re-enable debug comments.
+
+			$this->p->debug->enable( 'html', $debug_prev_state );	// Maybe re-enable notice messages.
 
 			/**
 			 * Save any pre-existing array values.
