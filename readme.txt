@@ -66,6 +66,23 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.6.1-rc.2 (2020/09/06)**
+
+Maintenance release.
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Added method calls to disable/reenable notices before/after running the REST API callback.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.7.
+	* WPSSO Core 8.3.1-rc.2.
+
 **Version 2.6.0 (2020/08/11)**
 
 Maintenance release.
@@ -84,6 +101,10 @@ Maintenance release.
 	* WPSSO Core 8.0.0.
 
 == Upgrade Notice ==
+
+= 2.6.1-rc.2 =
+
+(2020/09/06) Added method calls to disable/reenable notices before/after running the REST API callback.
 
 = 2.6.0 =
 
