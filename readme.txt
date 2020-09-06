@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.7
 Tested Up To: 5.5
-Stable Tag: 2.6.0
+Stable Tag: 2.6.1
 
 Enhances the WordPress REST API Post, Term and User Queries with an Array of Social Meta Tags, SEO HTML Tags and Schema JSON-LD Markup.
 
@@ -83,30 +83,9 @@ Maintenance release.
 	* WordPress v4.7.
 	* WPSSO Core 8.3.1.
 
-**Version 2.6.0 (2020/08/11)**
-
-Maintenance release.
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.7.
-	* WPSSO Core 8.0.0.
-
 == Upgrade Notice ==
 
 = 2.6.1 =
 
 (2020/09/06) Added method calls to disable/reenable admin notices before/after running the REST API callback.
-
-= 2.6.0 =
-
-(2020/08/11) Maintenance release.
 
