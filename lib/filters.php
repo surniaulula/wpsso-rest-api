@@ -159,9 +159,9 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 					return $result;	// Object type is unknown - stop here.
 			}
 
-			$this->p->notice->enable( $notice_prev_state );		// Maybe re-enable debug comments.
+			$this->p->notice->enable( $notice_prev_state );		// Maybe reenable debug comments.
 
-			$this->p->debug->enable( 'html', $debug_prev_state );	// Maybe re-enable notice messages.
+			$this->p->debug->enable( 'html', $debug_prev_state );	// Maybe reenable notice messages.
 
 			/**
 			 * Save any pre-existing array values.
