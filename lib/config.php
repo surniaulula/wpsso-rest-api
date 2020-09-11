@@ -42,7 +42,7 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '8.3.1',
+							'min_version'   => '8.4.0',
 						),
 					),
 
