@@ -81,7 +81,7 @@ Maintenance release.
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.7.
-	* WPSSO Core 8.3.1.
+	* WPSSO Core v8.4.0.
 
 == Upgrade Notice ==
 
