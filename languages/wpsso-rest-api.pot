@@ -12,7 +12,7 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: gettext/gettext-config.php:6 lib/gettext-config.php:6
+#: gettext/gettext-lib-config.php:6
 msgctxt "plugin description"
 msgid ""
 "Enhances the WordPress REST API Post, Term and User Queries with an Array of "
