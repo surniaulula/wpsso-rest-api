@@ -66,7 +66,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.6.2-rc.1 (2020/09/15)**
+**Version 2.6.2 (2020/09/15)**
 
 * **New Features**
 	* None.
@@ -79,7 +79,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.7.
-	* WPSSO Core v8.5.0-rc.1.
+	* WPSSO Core v8.5.0.
 
 **Version 2.6.1 (2020/09/06)**
 
@@ -100,11 +100,7 @@ Maintenance release.
 
 == Upgrade Notice ==
 
-= 2.6.2-rc.1 =
+= 2.6.2 =
 
 (2020/09/15) Updated the French plugin translations.
-
-= 2.6.1 =
-
-(2020/09/06) Added method calls to disable/reenable admin notices before/after running the REST API callback.
 
