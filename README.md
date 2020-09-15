@@ -3,10 +3,10 @@
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO REST API</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>Enhances the WordPress REST API Post, Term and User Queries with an Array of Social Meta Tags, SEO HTML Tags and Schema JSON-LD Markup.</td></tr>
-<tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.6.1</td></tr>
+<tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.6.2</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires PHP</th><td>5.6 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires WordPress</th><td>4.7 or newer</td></tr>
-<tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>5.5</td></tr>
+<tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>5.5.1</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
 <tr><th align="right" valign="top" nowrap>License</th><td><a href="https://www.gnu.org/licenses/gpl.txt">GPLv3</a></td></tr>
 <tr><th align="right" valign="top" nowrap>Tags / Keywords</th><td>rest, api, rest api, meta tags, schema, markup</td></tr>
