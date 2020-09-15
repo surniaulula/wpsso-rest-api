@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO REST API 2.6.0\n"
+"Project-Id-Version: WPSSO REST API 2.6.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-rest-api\n"
-"POT-Creation-Date: 2020-09-14 11:16-0700\n"
-"PO-Revision-Date: 2020-09-15 08:59-0700\n"
+"POT-Creation-Date: 2020-09-15 10:53-0700\n"
+"PO-Revision-Date: 2020-09-15 10:53-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -15,6 +15,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: gettext/gettext-lib-config.php:6
+msgctxt "plugin name"
+msgid "WPSSO REST API"
+msgstr "WPSSO API REST"
+
+#: gettext/gettext-lib-config.php:7
 msgctxt "plugin description"
 msgid "Enhances the WordPress REST API Post, Term and User Queries with an Array of Social Meta Tags, SEO HTML Tags and Schema JSON-LD Markup."
 msgstr "Améliore les requêtes d'articles, termes et utilisateurs de l'API REST de WordPress avec un tableau de balises méta sociales, de balises HTML SEO et balisage de Schéma JSON-LD."
