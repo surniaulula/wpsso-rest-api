@@ -13,6 +13,11 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
 #: gettext/gettext-lib-config.php:6
+msgctxt "plugin name"
+msgid "WPSSO REST API"
+msgstr ""
+
+#: gettext/gettext-lib-config.php:7
 msgctxt "plugin description"
 msgid ""
 "Enhances the WordPress REST API Post, Term and User Queries with an Array of "
