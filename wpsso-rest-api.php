@@ -41,7 +41,6 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 	class WpssoRest extends WpssoAddOn {
 
 		public $filters;	// WpssoRestFilters class.
-		public $reg;		// WpssoRestRegister class.
 
 		protected $p;
 
