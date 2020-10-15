@@ -113,7 +113,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			$notice_prev_state = $this->p->notice->disable();	// Optimize and maybe disable notice messages.
 
 			switch ( $this->mod_name ) {
-			
+
 				case 'post':
 
 					$mod = $this->p->post->get_mod( $this->obj_array[ 'id' ] );

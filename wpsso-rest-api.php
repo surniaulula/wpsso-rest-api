@@ -61,21 +61,12 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 			return self::$instance;
 		}
 
-		public function init_textdomain( $debug_enabled = false ) {
+		public function init_textdomain() {
 
-			static $local_cache = null;
-
-			if ( null === $local_cache || $debug_enabled ) {
-
-				$local_cache = 'wpsso-rest-api';
-
-				load_plugin_textdomain( 'wpsso-rest-api', false, 'wpsso-rest-api/languages/' );
-			}
-
-			return $local_cache;
+			load_plugin_textdomain( 'wpsso-rest-api', false, 'wpsso-rest-api/languages/' );
 		}
 
-		public function init_objects() {
+		public function init_objects( $is_admin, $doing_ajax, $doing_cron ) {
 
 			$this->p =& Wpsso::get_instance();
 
