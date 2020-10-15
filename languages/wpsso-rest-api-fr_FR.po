@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO REST API 2.6.2\n"
+"Project-Id-Version: WPSSO REST API 2.7.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-rest-api\n"
-"POT-Creation-Date: 2020-09-15 10:53-0700\n"
-"PO-Revision-Date: 2020-09-15 10:53-0700\n"
+"POT-Creation-Date: 2020-10-07 16:27-0700\n"
+"PO-Revision-Date: 2020-10-07 16:27-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -14,6 +14,14 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:157
+msgid "The %1$s add-on requires the %2$s plugin &mdash; please activate the missing plugin."
+msgstr "L'ajout %1$s nécessite l'extension %2$s &mdash; veuillez activer l'extension manquante."
+
+#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:171
+msgid "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is currently installed)."
+msgstr "L'ajout %1$s nécessite %2$s version %3$s ou plus récente (la version %4$s est actuellement installée)."
+
 #: gettext/gettext-lib-config.php:6
 msgctxt "plugin name"
 msgid "WPSSO REST API"
@@ -23,14 +31,6 @@ msgstr "WPSSO API REST"
 msgctxt "plugin description"
 msgid "Enhances the WordPress REST API Post, Term and User Queries with an Array of Social Meta Tags, SEO HTML Tags and Schema JSON-LD Markup."
 msgstr "Améliore les requêtes d'articles, termes et utilisateurs de l'API REST de WordPress avec un tableau de balises méta sociales, de balises HTML SEO et balisage de Schéma JSON-LD."
-
-#: wpsso-rest-api.php:270
-msgid "The %1$s version %2$s add-on requires the %3$s plugin &mdash; please activate the missing plugin."
-msgstr "L'ajout %1$s version %2$s nécessite l'extension %3$s &mdash; veuillez activer l'extension manquante."
-
-#: wpsso-rest-api.php:283
-msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
-msgstr "L'ajout %1$s version %2$s nécessite %3$s version %4$s ou plus récente (la version %5$s est actuellement installée)."
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO REST API"
