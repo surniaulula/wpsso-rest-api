@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO REST API 2.7.0\n"
+"Project-Id-Version: WPSSO REST API 2.7.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-rest-api\n"
-"POT-Creation-Date: 2020-10-07 16:27-0700\n"
-"PO-Revision-Date: 2020-10-07 16:27-0700\n"
+"POT-Creation-Date: 2020-10-17 11:39-0700\n"
+"PO-Revision-Date: 2020-10-17 11:39-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -14,11 +14,11 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:157
+#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:161
 msgid "The %1$s add-on requires the %2$s plugin &mdash; please activate the missing plugin."
 msgstr "L'ajout %1$s nécessite l'extension %2$s &mdash; veuillez activer l'extension manquante."
 
-#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:171
+#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:179
 msgid "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is currently installed)."
 msgstr "L'ajout %1$s nécessite %2$s version %3$s ou plus récente (la version %4$s est actuellement installée)."
 
@@ -29,8 +29,8 @@ msgstr "WPSSO API REST"
 
 #: gettext/gettext-lib-config.php:7
 msgctxt "plugin description"
-msgid "Enhances the WordPress REST API Post, Term and User Queries with an Array of Social Meta Tags, SEO HTML Tags and Schema JSON-LD Markup."
-msgstr "Améliore les requêtes d'articles, termes et utilisateurs de l'API REST de WordPress avec un tableau de balises méta sociales, de balises HTML SEO et balisage de Schéma JSON-LD."
+msgid "Enhances the WordPress REST API post, term and user queries with an array of social meta tags, SEO HTML tags and Schema JSON-LD markup."
+msgstr "Améliore les requêtes d'articles, termes et utilisateurs de l'API REST WordPress avec un tableau de balises méta sociales, de balises HTML SEO et de balisage de Schéma JSON-LD."
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO REST API"
@@ -41,8 +41,8 @@ msgid "https://wpsso.com/extend/plugins/wpsso-rest-api/"
 msgstr "https://wpsso.com/extend/plugins/wpsso-rest-api/"
 
 #. Description of the plugin/theme
-msgid "Enhances the WordPress REST API Post, Term and User Queries with an Array of Social Meta Tags, SEO HTML Tags and Schema JSON-LD Markup."
-msgstr "Améliore les requêtes d'articles, termes et utilisateurs de l'API REST de WordPress avec un tableau de balises méta sociales, de balises HTML SEO et balisage de Schéma JSON-LD."
+msgid "Enhances the WordPress REST API post, term and user queries with an array of social meta tags, SEO HTML tags and Schema JSON-LD markup."
+msgstr "Améliore les requêtes d'articles, termes et utilisateurs de l'API REST WordPress avec un tableau de balises méta sociales, de balises HTML SEO et de balisage de Schéma JSON-LD."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
