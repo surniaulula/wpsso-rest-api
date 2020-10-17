@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.7
 Tested Up To: 5.5.1
-Stable Tag: 2.6.2
+Stable Tag: 2.7.0
 
 Enhances the WordPress REST API post, term and user queries with an array of social meta tags, SEO HTML tags and Schema JSON-LD markup.
 
@@ -82,45 +82,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.7.
 	* WPSSO Core v8.8.0.
 
-**Version 2.6.2 (2020/09/15)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the French plugin translations.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Moved extracted translation strings from lib/gettext-*.php files to a new gettext/ folder.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.7.
-	* WPSSO Core v8.5.0.
-
-**Version 2.6.1 (2020/09/06)**
-
-Maintenance release.
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added method calls to disable/reenable admin notices before/after running the REST API callback.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.7.
-	* WPSSO Core v8.4.1.
-
 == Upgrade Notice ==
 
 = 2.7.0 =
 
 (2020/10/17) Refactored the add-on class to extend a new WpssoAddOn abstract class.
-
-= 2.6.2 =
-
-(2020/09/15) Updated the French plugin translations.
 
