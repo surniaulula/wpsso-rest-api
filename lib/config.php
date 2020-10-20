@@ -87,12 +87,12 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 			/**
 			 * Define fixed constants.
 			 */
-			define( 'WPSSOREST_FILEPATH', $plugin_file );						
+			define( 'WPSSOREST_FILEPATH', $plugin_file );
 			define( 'WPSSOREST_PLUGINBASE', $info[ 'base' ] );	// Example: wpsso-rest-api/wpsso-rest-api.php.
 			define( 'WPSSOREST_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_file ) ) ) );
 			define( 'WPSSOREST_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-rest-api.
 			define( 'WPSSOREST_URLPATH', trailingslashit( plugins_url( '', $plugin_file ) ) );
-			define( 'WPSSOREST_VERSION', $info[ 'version' ] );						
+			define( 'WPSSOREST_VERSION', $info[ 'version' ] );
 		}
 
 		public static function require_libs( $plugin_file ) {
