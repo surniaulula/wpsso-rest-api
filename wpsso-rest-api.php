@@ -40,11 +40,11 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 
 	class WpssoRest extends WpssoAddOn {
 
-		public $filters;	// WpssoRestFilters class.
+		public $filters;	// WpssoRestFilters class object.
 
-		protected $p;
+		protected $p;	// Wpsso class object.
 
-		private static $instance = null;
+		private static $instance = null;	// WpssoRest class object.
 
 		public function __construct() {
 

@@ -14,7 +14,8 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 
 	class WpssoRestFilters {
 
-		private $p;
+		private $p;	// Wpsso class object.
+
 		private $mod_name;
 		private $obj_array;
 
