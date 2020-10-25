@@ -6,6 +6,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
+
 	die( 'These aren\'t the droids you\'re looking for.' );
 }
 
@@ -76,9 +77,10 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
 
-		public static function set_constants( $plugin_file ) { 
+		public static function set_constants( $plugin_file ) {
 
 			if ( defined( 'WPSSOREST_VERSION' ) ) {	// Define constants only once.
+
 				return;
 			}
 
