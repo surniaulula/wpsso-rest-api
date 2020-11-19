@@ -1,4 +1,4 @@
-=== REST API | WPSSO Add-on ===
+=== WPSSO REST API ===
 Plugin Name: WPSSO REST API
 Plugin Slug: wpsso-rest-api
 Text Domain: wpsso-rest-api
