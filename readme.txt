@@ -35,7 +35,7 @@ There is no add-on settings page for this plugin &mdash; simply *install* and *a
 
 WPSSO REST API (aka WPSSO REST) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
 
-WPSSO Core and its add-ons make sure your content looks great on social sites and in search results, no matter how your URLs are crawled, shared, re-shared, posted, or embedded.
+WPSSO Core and its add-ons make sure your content looks best on social sites and in search results, no matter how your webpages are shared, re-shared, messaged, posted, embedded, or crawled.
 
 == Installation ==
 
