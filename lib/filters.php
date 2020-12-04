@@ -15,11 +15,15 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 	class WpssoRestFilters {
 
 		private $p;	// Wpsso class object.
+		private $a;	// WpssoRest class object.
 
 		private $mod_name;
 		private $obj_array;
 
-		public function __construct( &$plugin ) {
+		/**
+		 * Instantiated by WpssoRest->init_objects().
+		 */
+		public function __construct( &$plugin, &$addon ) {
 
 			static $do_once = null;
 
@@ -31,11 +35,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			$do_once = true;
 
 			$this->p =& $plugin;
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
+			$this->a =& $addon;
 
 			add_action( 'rest_api_init', array( $this, 'register_callbacks' ) );
 		}

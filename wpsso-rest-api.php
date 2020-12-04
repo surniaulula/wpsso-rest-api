@@ -14,7 +14,7 @@
  * Requires PHP: 5.6
  * Requires At Least: 4.7
  * Tested Up To: 5.6
- * Version: 2.7.1
+ * Version: 2.8.0
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -83,7 +83,7 @@ if ( ! class_exists( 'WpssoRest' ) ) {
 				return;	// Stop here.
 			}
 
-			$this->filters = new WpssoRestFilters( $this->p );
+			$this->filters = new WpssoRestFilters( $this->p, $this );
 		}
 	}
 
