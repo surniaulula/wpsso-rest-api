@@ -11,7 +11,7 @@
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Enhances the WordPress REST API post, term and user queries with an array of social meta tags, SEO HTML tags and Schema JSON-LD markup.
- * Requires PHP: 5.6
+ * Requires PHP: 7.0
  * Requires At Least: 4.7
  * Tested Up To: 5.6
  * Version: 2.8.0
