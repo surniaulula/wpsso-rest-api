@@ -12,9 +12,9 @@
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Extends the WordPress REST API post, term, and user query results with an array of meta tags and Schema JSON-LD markup.
  * Requires PHP: 7.0
- * Requires At Least: 4.7
+ * Requires At Least: 5.0
  * Tested Up To: 5.8.1
- * Version: 2.8.1
+ * Version: 2.9.0-rc.2
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
