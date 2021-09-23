@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-rest-api/assets/
 Tags: rest, api, rest api, meta tags, schema, markup
 Contributors: jsmoriss
 Requires PHP: 7.0
-Requires At Least: 4.7
+Requires At Least: 5.0
 Tested Up To: 5.8.1
 Stable Tag: 2.8.1
 
@@ -19,9 +19,9 @@ Extends the WordPress REST API post, term, and user query results with an array 
 
 <p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-rest-api/assets/icon-256x256.png"> <strong>Extends the WordPress REST API post, term, and user query results with an array of meta tags and Schema JSON-LD markup.</strong></p>
 
-The WPSSO JSON add-on includes a `'head'` element in the WordPress REST API query results to provide `'html'`, `'json'`, and `'parts'` arrays:
+Includes a `'head'` element in the WordPress REST API query results to provide `'html'`, `'json'`, and `'parts'` arrays:
 
-* The `'html'` array includes the HTML formatted meta tags and Schema JSON-LD (aka LD+JSON) scripts, as they appear in the webpage head section.
+* The `'html'` array includes HTML formatted meta tags and Schema JSON-LD (aka LD+JSON) scripts, as they appear in the webpage head section.
 
 * The `'json'` array provides Schema JSON-LD (aka LD+JSON) scripts in their decoded format.
 
@@ -61,6 +61,23 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * [WordPress.org](https://plugins.trac.wordpress.org/browser/wpsso-rest-api/)
 
 <h3>Changelog / Release Notes</h3>
+
+**Version 2.9.0-rc.2 (2021/09/23)**
+
+Maintenance release for WPSSO Core v9.0.0.
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.0.
+	* WordPress v5.0.
+	* WPSSO Core v9.0.0-rc.2.
 
 **Version 2.8.1 (2021/02/25)**
 
@@ -109,6 +126,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v8.13.0.
 
 == Upgrade Notice ==
+
+= 2.9.0-rc.2 =
+
+(2021/09/23) Maintenance release for WPSSO Core v9.0.0.
 
 = 2.8.1 =
 
