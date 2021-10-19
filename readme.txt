@@ -17,7 +17,7 @@ Extends the WordPress REST API post, term, and user query results with an array 
 
 == Description ==
 
-<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-rest-api/assets/icon-256x256.png"> <strong>Extends the WordPress REST API post, term, and user query results with an array of meta tags and Schema JSON-LD markup.</strong></p>
+**Extends the WordPress REST API post, term, and user query results with an array of meta tags and Schema JSON-LD markup.**
 
 Includes a `'head'` element in the WordPress REST API query results to provide `'html'`, `'json'`, and `'parts'` arrays:
 
