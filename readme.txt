@@ -17,15 +17,19 @@ Extends the WordPress REST API post, term, and user query results with an array 
 
 == Description ==
 
-**Extends the WordPress REST API post, term, and user query results with an array of meta tags and Schema JSON-LD markup.**
+<!-- about -->
 
-Includes a `'head'` element in the WordPress REST API query results to provide `'html'`, `'json'`, and `'parts'` arrays:
+**The WPSSO REST API add-on extends the WordPress REST API post, term, and user query results.**
+
+Includes a `'head'` element in the WordPress REST API query results to provide an `'html'`, `'json'`, and `'parts'` array:
 
 * The `'html'` array includes HTML formatted meta tags and Schema JSON-LD (aka LD+JSON) scripts, as they appear in the webpage head section.
 
 * The `'json'` array provides Schema JSON-LD (aka LD+JSON) scripts in their decoded format.
 
-* The `'parts'` array offers HTML meta tag attributes (aka "the parts") as arrays, making it easier to find / use specific meta tag values.
+* The `'parts'` array offers HTML meta tag attributes (aka "the parts") as arrays, making it easier to find and use specific meta tag values.
+
+<!-- /about -->
 
 There is no add-on settings page for this plugin - simply *install* and *activate* the plugin.
 
