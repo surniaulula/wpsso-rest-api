@@ -27,9 +27,9 @@ Includes a `head` element in the WordPress REST API results to provide `html`, `
 * The `json` array provides Schema JSON-LD (aka LD+JSON) scripts in their decoded format.
 * The `parts` array offers meta tag attributes (aka "the parts") as arrays, making it easier to find and use specific meta tag values.
 
-<!-- /about -->
-
 There is no add-on settings page for this plugin - simply *install* and *activate* the plugin.
+
+<!-- /about -->
 
 <h3>WPSSO Core Required</h3>
 
