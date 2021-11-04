@@ -10,7 +10,7 @@ Tags: rest, api, rest api, meta tags, schema, markup
 Contributors: jsmoriss
 Requires PHP: 7.0
 Requires At Least: 5.0
-Tested Up To: 5.8.1
+Tested Up To: 5.8.2
 Stable Tag: 2.9.0
 
 Extends the WordPress REST API post, term, and user query results with an array of meta tags and Schema JSON-LD markup.
