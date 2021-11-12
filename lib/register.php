@@ -109,7 +109,7 @@ if ( ! class_exists( 'WpssoRestRegister' ) ) {
 				 */
 				if ( class_exists( 'WpssoUtilReg' ) ) { // Since WPSSO Core v6.13.1.
 
-					$version = WpssoRestConfig::$cf[ 'plugin' ][ 'wpssorest' ][ 'version' ];
+					$version = WpssoRestConfig::get_version();
 
 					WpssoUtilReg::update_ext_version( 'wpssorest', $version );
 				}
