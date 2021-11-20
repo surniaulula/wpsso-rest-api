@@ -49,6 +49,9 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 
 			$field_name = 'head';
 
+			/**
+			 * Returns post types registered as 'public' = 1 and 'show_ui' = 1.
+			 */
 			foreach ( SucomUtilWP::get_post_types( $output = 'names' ) as $name ) {
 
 				register_rest_field( $name, 'head', array(
