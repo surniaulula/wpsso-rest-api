@@ -26,7 +26,7 @@
 <li>The <code>parts</code> array offers meta tag attributes (aka "the parts") as arrays, making it easier to find and use specific meta tag values.</li>
 </ul>
 
-<p>There is no add-on settings page for this plugin - simply <em>install</em> and <em>activate</em> the plugin.</p>
+<p>There is no add-on settings page for this plugin - simply install and activate the plugin.</p>
 
 <!-- /about -->
 

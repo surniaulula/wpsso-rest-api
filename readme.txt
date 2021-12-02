@@ -27,7 +27,7 @@ Includes a `head` element in the WordPress REST API results to provide `html`, `
 * The `json` array provides Schema JSON-LD (aka LD+JSON) scripts in their decoded format.
 * The `parts` array offers meta tag attributes (aka "the parts") as arrays, making it easier to find and use specific meta tag values.
 
-There is no add-on settings page for this plugin - simply *install* and *activate* the plugin.
+There is no add-on settings page for this plugin - simply install and activate the plugin.
 
 <!-- /about -->
 
