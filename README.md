@@ -34,7 +34,6 @@
 
 <p>WPSSO REST API (WPSSO REST) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a>.</p>
 
-
 <h2>Installation</h2>
 
 <h3 class="top">Install and Uninstall</h3>
@@ -43,10 +42,4 @@
 <li><a href="https://wpsso.com/docs/plugins/wpsso-rest-api/installation/install-the-plugin/">Install the WPSSO REST API add-on</a>.</li>
 <li><a href="https://wpsso.com/docs/plugins/wpsso-rest-api/installation/uninstall-the-plugin/">Uninstall the WPSSO REST API add-on</a>.</li>
 </ul>
-
-
-<h2>Frequently Asked Questions</h2>
-
-
-
 
