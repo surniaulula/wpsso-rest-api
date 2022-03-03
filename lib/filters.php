@@ -49,7 +49,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 
 			$field_name = 'head';
 
-			foreach ( SucomUtilWP::get_post_types( $output = 'names' ) as $name ) {
+			foreach ( SucomUtil::get_post_types( $output = 'names' ) as $name ) {
 
 				register_rest_field( $name, 'head', array(
 					'get_callback'    => array( $this, 'get_post' ),
@@ -58,7 +58,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 				) );
 			}
 
-			foreach ( SucomUtilWP::get_taxonomies( $output = 'names' ) as $name ) {
+			foreach ( SucomUtil::get_taxonomies( $output = 'names' ) as $name ) {
 
 				register_rest_field( $name, 'head', array(
 					'get_callback'    => array( $this, 'get_term' ),
