@@ -70,6 +70,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.10.1-dev.4 (2022/03/03)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.2.
+	* WordPress v5.2.
+	* WPSSO Core v11.5.0-dev.4.
+
 **Version 2.10.0 (2022/01/19)**
 
 * **New Features**
@@ -167,6 +182,10 @@ Maintenance release for WPSSO Core v9.0.0.
 	* WPSSO Core v8.13.0.
 
 == Upgrade Notice ==
+
+= 2.10.1-dev.4 =
+
+(2022/03/03) None.
 
 = 2.10.0 =
 
