@@ -13,7 +13,7 @@
  * Description: Extends the WordPress REST API post, term, and user query results with an array of meta tags and Schema JSON-LD markup.
  * Requires PHP: 7.2
  * Requires At Least: 5.2
- * Tested Up To: 5.9.2
+ * Tested Up To: 5.9.3
  * Version: 2.10.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
