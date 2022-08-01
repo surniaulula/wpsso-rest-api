@@ -95,7 +95,6 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			 * Reference variables for filter_get_term_object() and filter_get_user_object().
 			 */
 			$this->mod_name  = $mod_name;
-
 			$this->obj_array = $obj_array;
 
 			/**
@@ -109,9 +108,8 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 
 			$head_array = array();	// Pre-define - just in case.
 
-			$debug_prev_state = $this->p->debug->disable( 'html' );	// Optimize and maybe disable debug comments.
-
-			$notice_prev_state = $this->p->notice->disable();	// Optimize and maybe disable notice messages.
+			$debug_prev_state  = $this->p->debug->disable( 'html' );	// Optimize and maybe debug comments.
+			$notice_prev_state = $this->p->notice->disable();		// Optimize and maybe notice messages.
 
 			switch ( $this->mod_name ) {
 
@@ -154,7 +152,6 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			}
 
 			$this->p->notice->enable( $notice_prev_state );		// Maybe reenable debug comments.
-
 			$this->p->debug->enable( 'html', $debug_prev_state );	// Maybe reenable notice messages.
 
 			/**
