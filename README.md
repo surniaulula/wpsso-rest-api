@@ -16,9 +16,7 @@
 
 <!-- about -->
 
-<p><strong>The WPSSO REST API add-on extends the WordPress REST API post, term, and user query results.</strong></p>
-
-<p>Includes a <code>head</code> element in the WordPress REST API results to provide <code>html</code>, <code>json</code>, and <code>parts</code> arrays:</p>
+<p><strong>Extends the WordPress REST API post, term, and user query results:</strong></p>
 
 <ul>
 <li>The <code>html</code> array includes HTML formatted meta tags and Schema JSON-LD (aka LD+JSON) scripts, as they appear in the webpage head section.</li>
