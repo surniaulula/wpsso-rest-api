@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Copyright 2018-2023 Jean-Sebastien Morisset (https://wpsso.com/)
@@ -20,7 +20,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 		private $mod_name;
 		private $obj_array;
 
-		/**
+		/*
 		 * Instantiated by WpssoRest->init_objects().
 		 */
 		public function __construct( &$plugin, &$addon ) {
@@ -91,13 +91,13 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 
 		private function get_head( $mod_name, $obj_array, $field_name, $request ) {
 
-			/**
+			/*
 			 * Reference variables for filter_get_term_object() and filter_get_user_object().
 			 */
 			$this->mod_name  = $mod_name;
 			$this->obj_array = $obj_array;
 
-			/**
+			/*
 			 * Pre-define an array element order, and create a default array to return in case $mod_name is unknown.
 			 */
 			$result = array(
@@ -154,7 +154,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			$this->p->notice->enable( $notice_prev_state );		// Maybe reenable debug comments.
 			$this->p->debug->enable( 'html', $debug_prev_state );	// Maybe reenable notice messages.
 
-			/**
+			/*
 			 * Save any pre-existing array values.
 			 */
 			foreach ( $result as $type => $values ) {
@@ -165,24 +165,24 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 				}
 			}
 
-			/**
+			/*
 			 * Add meta tags to the API array.
 			 */
 			foreach ( $head_array as $meta ) {
 
-				/**
+				/*
 				 * Save the first array element, which is the html formatted meta tag or script.
 				 */
 				if ( ! empty( $meta[ 0 ] ) ) {		// Just in case we don't have an html value.
 
 					$result[ 'html' ][] = $meta[ 0 ];	// Save the html, including any json script blocks.
 
-					/**
+					/*
 					 * If the html contains a script, decode and save the ld+json as an array.
 					 */
 					if ( strpos( $meta[ 0 ], '<script ' ) === 0 ) {
 
-						/**
+						/*
 						 * Extract the script type and its value.
 						 */
 						if ( preg_match( '/^<script type="([^\'"]+)">(.*)<\/script>$/s', $meta[ 0 ], $matches ) ) {
