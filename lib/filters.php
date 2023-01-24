@@ -74,17 +74,17 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			) );
 		}
 
-		public function get_post( $obj_array, $field_name = 'head', WP_REST_Request $request ) {
+		public function get_post( $obj_array, $field_name, WP_REST_Request $request ) {
 
 			return $this->get_head( 'post', $obj_array, $field_name, $request );
 		}
 
-		public function get_term( $obj_array, $field_name = 'head', WP_REST_Request $request ) {
+		public function get_term( $obj_array, $field_name, WP_REST_Request $request ) {
 
 			return $this->get_head( 'term', $obj_array, $field_name, $request );
 		}
 
-		public function get_user( $obj_array, $field_name = 'head', WP_REST_Request $request ) {
+		public function get_user( $obj_array, $field_name, WP_REST_Request $request ) {
 
 			return $this->get_head( 'user', $obj_array, $field_name, $request );
 		}
