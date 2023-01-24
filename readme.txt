@@ -74,7 +74,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **New Features**
 	* None.
 * **Improvements**
-	* None.
+	* Updated the minimum WordPress version from v5.2 to v5.4.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
