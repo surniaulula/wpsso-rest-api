@@ -13,7 +13,7 @@
  * Description: Extends the WordPress REST API post, term, and user query results with an array of meta tags and Schema JSON-LD markup.
  * Requires Plugins: wpsso
  * Requires PHP: 7.2
- * Requires At Least: 5.4
+ * Requires At Least: 5.5
  * Tested Up To: 6.2.0
  * Version: 2.11.1
  *
