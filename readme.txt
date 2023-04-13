@@ -10,7 +10,7 @@ Tags: rest, api, rest api, meta tags, schema, markup
 Contributors: jsmoriss
 Requires Plugins: wpsso
 Requires PHP: 7.2
-Requires At Least: 5.4
+Requires At Least: 5.5
 Tested Up To: 6.2.0
 Stable Tag: 2.11.1
 
@@ -83,7 +83,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Updated the `WpssoAbstractAddOn` library class.
 * **Requires At Least**
 	* PHP v7.2.
-	* WordPress v5.4.
+	* WordPress v5.5.
 	* WPSSO Core v14.7.0.
 
 **Version 2.11.0 (2023/01/20)**
