@@ -76,7 +76,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **New Features**
 	* None.
 * **Improvements**
-	* Updated the minimum WordPress version from v5.2 to v5.4.
+	* Updated the minimum WordPress version from v5.2 to v5.5.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -86,167 +86,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v5.5.
 	* WPSSO Core v14.7.0.
 
-**Version 2.11.0 (2023/01/20)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated the `SucomAbstractAddOn` common library class.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v14.5.0.
-
-**Version 2.10.1 (2022/03/07)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated `SucomUtilWP` method calls to `SucomUtil` for WPSSO Core v11.5.0.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v11.5.0.
-
-**Version 2.10.0 (2022/01/19)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Renamed the lib/abstracts/ folder to lib/abstract/.
-	* Renamed the `SucomAddOn` class to `SucomAbstractAddOn`.
-	* Renamed the `WpssoAddOn` class to `WpssoAbstractAddOn`.
-	* Renamed the `WpssoWpMeta` class to `WpssoAbstractWpMeta`.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v9.14.0.
-
-**Version 2.9.1 (2021/11/16)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Refactored the `SucomAddOn->get_missing_requirements()` method.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v9.8.0.
-
-**Version 2.9.0 (2021/09/24)**
-
-Maintenance release for WPSSO Core v9.0.0.
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v5.0.
-	* WPSSO Core v9.0.0.
-
-**Version 2.8.1 (2021/02/25)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the banners and icons of WPSSO Core and its add-ons.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v4.7.
-	* WPSSO Core v8.34.0.
-
-**Version 2.8.0 (2020/12/04)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Included the `$addon` argument for library class constructors.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v4.7.
-	* WPSSO Core v8.16.0.
-
-**Version 2.7.1 (2020/10/17)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Refactored the add-on class to extend a new WpssoAddOn abstract class.
-* **Bugfixes**
-	* Fixed backwards compatibility with older 'init_objects' and 'init_plugin' action arguments.
-* **Developer Notes**
-	* Added a new WpssoAddOn class in lib/abstracts/add-on.php.
-	* Added a new SucomAddOn class in lib/abstracts/com/add-on.php.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.7.
-	* WPSSO Core v8.13.0.
-
 == Upgrade Notice ==
 
 = 2.11.1 =
 
-(2023/01/26) Updated the minimum WordPress version from v5.2 to v5.4.
-
-= 2.11.0 =
-
-(2023/01/20) Updated the `SucomAbstractAddOn` common library class.
-
-= 2.10.1 =
-
-(2022/03/07) Updated `SucomUtilWP` method calls to `SucomUtil` for WPSSO Core v11.5.0.
-
-= 2.10.0 =
-
-(2022/01/19) Renamed the lib/abstracts/ folder and its classes.
-
-= 2.9.1 =
-
-(2021/11/16) Refactored the `SucomAddOn->get_missing_requirements()` method.
-
-= 2.9.0 =
-
-(2021/09/24) Maintenance release for WPSSO Core v9.0.0.
-
-= 2.8.1 =
-
-(2021/02/25) Updated the banners and icons of WPSSO Core and its add-ons.
-
-= 2.8.0 =
-
-(2020/12/04) Included the `$addon` argument for library class constructors.
-
-= 2.7.1 =
-
-(2020/10/17) Refactored the add-on class to extend a new WpssoAddOn abstract class.
+(2023/01/26) Updated the minimum WordPress version from v5.2 to v5.5.
 
