@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-rest-api/assets/
 Tags: rest, api, rest api, meta tags, schema, markup
 Contributors: jsmoriss
 Requires Plugins: wpsso
-Requires PHP: 7.2.5
+Requires PHP: 7.2.34
 Requires At Least: 5.5
 Tested Up To: 6.2.2
 Stable Tag: 2.11.1
