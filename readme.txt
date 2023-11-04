@@ -71,7 +71,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.12.0-dev.9 (2021/11/04)**
+**Version 2.12.0-dev.10 (2021/11/04)**
 
 * **New Features**
 	* None.
@@ -84,7 +84,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.2.34.
 	* WordPress v5.5.
-	* WPSSO Core v16.7.0-dev.9.
+	* WPSSO Core v16.7.0-dev.10.
 
 **Version 2.11.1 (2023/01/26)**
 
@@ -103,7 +103,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.12.0-dev.9 =
+= 2.12.0-dev.10 =
 
 (2021/11/04) Refactored the settings page load process.
 
