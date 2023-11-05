@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssorest' => array(			// Plugin acronym.
-					'version'     => '2.12.0-dev.11',	// Plugin version.
+					'version'     => '3.0.0-dev.13',	// Plugin version.
 					'opt_version' => '1',		// Increment when changing default option values.
 					'short'       => 'WPSSO REST',	// Short plugin name.
 					'name'        => 'WPSSO REST API',
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoRestConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '16.7.0-dev.11',
+							'min_version'   => '17.0.0-dev.13',
 						),
 					),
 
