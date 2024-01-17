@@ -12,7 +12,7 @@ Requires Plugins: wpsso
 Requires PHP: 7.2.34
 Requires At Least: 5.8
 Tested Up To: 6.4.2
-Stable Tag: 3.0.0
+Stable Tag: 3.1.0
 
 Extends the WordPress REST API post, term, and user query results with an array of meta tags and Schema JSON-LD markup.
 
@@ -71,6 +71,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.1.0 (2024/01/12)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Update for `SucomUtil` and `SucomUtilWP` changes in WPSSO Core v17.8.0.
+* **Requires At Least**
+	* PHP v7.2.34.
+	* WordPress v5.8.
+	* WPSSO Core v17.8.0.
+
 **Version 3.0.0 (2021/11/08)**
 
 * **New Features**
@@ -86,28 +101,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v5.8.
 	* WPSSO Core v17.0.0.
 
-**Version 2.11.1 (2023/01/26)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the minimum WordPress version from v5.2 to v5.5.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated the `WpssoAbstractAddOn` library class.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.5.
-	* WPSSO Core v14.7.0.
-
 == Upgrade Notice ==
+
+= 3.1.0 =
+
+(2024/01/12) Update for `SucomUtil` and `SucomUtilWP` changes in WPSSO Core v17.8.0.
 
 = 3.0.0 =
 
 (2021/11/08) Refactored the settings page and metabox load process for WPSSO Core v17.0.0.
-
-= 2.11.1 =
-
-(2023/01/26) Updated the minimum WordPress version from v5.2 to v5.5.
 
