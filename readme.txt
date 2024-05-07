@@ -6,7 +6,7 @@ Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-rest-api/assets/
-Tags: rest, api, rest api, meta tags, schema, markup
+Tags: rest, api, rest api, meta tags, schema
 Contributors: jsmoriss
 Requires Plugins: wpsso
 Requires PHP: 7.2.34
