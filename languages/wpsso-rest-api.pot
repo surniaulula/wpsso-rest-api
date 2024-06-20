@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO REST API package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO REST API 3.1.1\n"
+"Project-Id-Version: WPSSO REST API 3.2.0-dev.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-rest-api\n"
 "POT-Creation-Date: 2024-MO-DA HO:MI+ZONE\n"
 "MIME-Version: 1.0\n"
@@ -37,6 +37,16 @@ msgstr ""
 #: gettext/gettext-lib-config.php:7
 msgctxt "plugin name"
 msgid "WPSSO Core"
+msgstr ""
+
+#: lib/filters.php:66
+msgid "%s error:"
+msgstr ""
+
+#: lib/filters.php:67
+msgid ""
+"Conflicting taxonomy and post type name \"%s\" is incompatible with the "
+"WordPress REST API."
 msgstr ""
 
 #. Plugin Name of the plugin/theme

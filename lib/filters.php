@@ -48,8 +48,9 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			}
 
 			$field_name = 'head';
+			$type_names = SucomUtilWP::get_post_types( $output = 'names' );
 
-			foreach ( SucomUtilWP::get_post_types( $output = 'names' ) as $name ) {
+			foreach ( $type_names as $name ) {
 
 				register_rest_field( $name, 'head', array(
 					'get_callback'    => array( $this, 'get_post' ),
@@ -60,11 +61,22 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 
 			foreach ( SucomUtilWP::get_taxonomies( $output = 'names' ) as $name ) {
 
-				register_rest_field( $name, 'head', array(
-					'get_callback'    => array( $this, 'get_term' ),
-					'update_callback' => null,
-					'schema'          => null,
-				) );
+				if ( in_array( $name, $type_names ) ) {
+
+					$error_pre = sprintf( __( '%s error:', 'wpsso-rest-api' ), __METHOD__ );
+					$error_msg = sprintf( __( 'Conflicting taxonomy and post type name "%s" is incompatible with the WordPress REST API.',
+						'wpsso-rest-api' ), $name );
+
+					SucomUtil::safe_error_log( $error_pre . ' ' . $error_msg );
+
+				} else {
+
+					register_rest_field( $name, 'head', array(
+						'get_callback'    => array( $this, 'get_term' ),
+						'update_callback' => null,
+						'schema'          => null,
+					) );
+				}
 			}
 
 			register_rest_field( 'user', 'head', array(
