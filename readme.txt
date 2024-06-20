@@ -71,7 +71,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.1.1-rc.1 (2024/06/20)**
+**Version 3.1.1 (2024/06/20)**
 
 * **New Features**
 	* None.
@@ -118,7 +118,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.1.1-rc.1 =
+= 3.1.1 =
 
 (2024/06/20) Fixed detection of the Schema 'ld+json' script.
 
