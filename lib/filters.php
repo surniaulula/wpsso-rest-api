@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 			$this->p =& $plugin;
 			$this->a =& $addon;
 
-			add_action( 'rest_api_init', array( $this, 'register_callbacks' ) );
+			add_action( 'rest_api_init', array( $this, 'register_callbacks' ), $prio = 10000 );
 		}
 
 		public function register_callbacks() {
@@ -108,8 +108,8 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 
 			$head_array = array();	// Pre-define - just in case.
 
-			$debug_prev_state  = $this->p->debug->disable( 'html' );	// Optimize and maybe debug comments.
-			$notice_prev_state = $this->p->notice->disable();		// Optimize and maybe notice messages.
+			$debug_prev_state  = $this->p->debug->disable( 'html' );	// Optimize and maybe disable debug comments.
+			$notice_prev_state = $this->p->notice->disable();		// Optimize and maybe disable notice messages.
 
 			switch ( $this->mod_name ) {
 
@@ -185,7 +185,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 						/*
 						 * Extract the script type and its value.
 						 */
-						if ( preg_match( '/^<script type="([^\'"]+)">(.*)<\/script>$/s', $meta[ 0 ], $matches ) ) {
+						if ( preg_match( '/^<script type="([^"]+)"[^>]*>(.*)<\/script>$/s', $meta[ 0 ], $matches ) ) {
 
 							switch ( $matches[ 1 ] ) {
 
