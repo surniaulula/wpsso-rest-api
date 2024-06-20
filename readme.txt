@@ -71,6 +71,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 3.1.1-dev.1 (2024/06/20)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Updated the 'rest_api_init' callback priority from 10 to 10000.
+* **Bugfixes**
+	* Fixed detection of the Schema 'ld+json' script.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.2.34.
+	* WordPress v5.8.
+	* WPSSO Core v17.17.1.
+
 **Version 3.1.0 (2024/01/12)**
 
 * **New Features**
@@ -102,6 +117,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v17.0.0.
 
 == Upgrade Notice ==
+
+= 3.1.1-dev.1 =
+
+(2024/06/20) Fixed detection of the Schema 'ld+json' script.
 
 = 3.1.0 =
 
