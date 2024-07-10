@@ -12,7 +12,7 @@ Requires Plugins: wpsso
 Requires PHP: 7.2.34
 Requires At Least: 5.8
 Tested Up To: 6.5.5
-Stable Tag: 3.1.1
+Stable Tag: 3.2.0
 
 Extends the WordPress REST API post, term, and user query results with an array of meta tags and Schema JSON-LD markup.
 
