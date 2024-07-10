@@ -71,7 +71,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.2.0-dev.1 (2024/06/20)**
+**Version 3.2.0-rc.1 (2024/06/20)**
 
 * **New Features**
 	* None.
@@ -133,7 +133,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.2.0-dev.1 =
+= 3.2.0-rc.1 =
 
 (2024/06/20) Added check for conflicting taxonomy and post type names.
 
