@@ -64,7 +64,7 @@ if ( ! class_exists( 'WpssoRestFilters' ) ) {
 				if ( in_array( $name, $type_names ) ) {
 
 					$error_pre = sprintf( __( '%s error:', 'wpsso-rest-api' ), __METHOD__ );
-					$error_msg = sprintf( __( 'Conflicting taxonomy and post type name "%s" is incompatible with the WordPress REST API.',
+					$error_msg = sprintf( __( 'The taxonomy and post type name "%s" are in conflict and incompatible with the WordPress REST API.',
 						'wpsso-rest-api' ), $name );
 
 					SucomUtil::safe_error_log( $error_pre . ' ' . $error_msg );

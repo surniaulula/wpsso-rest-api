@@ -45,8 +45,8 @@ msgstr ""
 
 #: lib/filters.php:67
 msgid ""
-"Conflicting taxonomy and post type name \"%s\" is incompatible with the "
-"WordPress REST API."
+"The taxonomy and post type name \"%s\" are in conflict and incompatible with "
+"the WordPress REST API."
 msgstr ""
 
 #. Plugin Name of the plugin/theme
