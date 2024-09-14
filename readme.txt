@@ -9,8 +9,8 @@ Assets URI: https://surniaulula.github.io/wpsso-rest-api/assets/
 Tags: rest, api, rest api, meta tags, schema
 Contributors: jsmoriss
 Requires Plugins: wpsso
-Requires PHP: 7.2.34
-Requires At Least: 5.8
+Requires PHP: 7.4.33
+Requires At Least: 5.9
 Tested Up To: 6.6.2
 Stable Tag: 3.3.0
 
@@ -82,89 +82,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* Changed the main instantiation action hook from 'init_objects' to 'init_objects_preloader'.
 * **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-	* WPSSO Core v18.5.0.
-
-**Version 3.2.0 (2024/06/20)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Added check for conflicting taxonomy and post type names.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-	* WPSSO Core v17.18.0.
-
-**Version 3.1.1 (2024/06/20)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the 'rest_api_init' callback priority from 10 to 10000.
-* **Bugfixes**
-	* Fixed detection of the Schema 'ld+json' script.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-	* WPSSO Core v17.17.1.
-
-**Version 3.1.0 (2024/01/12)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Update for `SucomUtil` and `SucomUtilWP` changes in WPSSO Core v17.8.0.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-	* WPSSO Core v17.8.0.
-
-**Version 3.0.0 (2023/11/08)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Refactored the settings page and metabox load process for WPSSO Core v17.0.0.
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.8.
-	* WPSSO Core v17.0.0.
+	* PHP v7.4.33.
+	* WordPress v5.9.
+	* WPSSO Core v18.7.3.
 
 == Upgrade Notice ==
 
 = 3.3.0 =
 
 (2024/08/25) Changed the main instantiation action hook from 'init_objects' to 'init_objects_preloader'.
-
-= 3.2.0 =
-
-(2024/06/20) Added check for conflicting taxonomy and post type names.
-
-= 3.1.1 =
-
-(2024/06/20) Fixed detection of the Schema 'ld+json' script.
-
-= 3.1.0 =
-
-(2024/01/12) Update for `SucomUtil` and `SucomUtilWP` changes in WPSSO Core v17.8.0.
-
-= 3.0.0 =
-
-(2023/11/08) Refactored the settings page and metabox load process for WPSSO Core v17.0.0.
 
